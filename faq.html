@@ -2,37 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>FAQ | Web Development, SEO & Digital Marketing Questions</title>
     <meta name="description" content="Find answers to common questions about web development, SEO, digital marketing, WhatsApp automation, and AI chatbot services.">
+    
+    <!-- Schema.org FAQ Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How long does web application development take?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our standard timeline is 1 month for development and 10 days for rigorous testing. For complex projects, we provide a detailed timeline during the consultation phase."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is your SEO process and when will I see results?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our 10-day SEO setup includes technical audit, keyword research, and initial optimization. You'll see improvements within 30 days, with significant results in 3-6 months."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you provide ongoing support after project completion?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! All web applications include 6 months of free support. We offer affordable monthly maintenance plans for ongoing updates, security, and performance monitoring."
+                }
+            }
+        ]
+    }
+    </script>
     
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-main sr-only">Skip to main content</a>
+
     <!-- Navigation -->
     <nav aria-label="Main navigation">
         <a href="index.html" class="logo">Denisia<span>Webops</span></a>
         
-        <button class="burger-menu" id="burgerMenu" aria-label="Toggle navigation menu" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        
-        <div class="nav-links" id="navLinks" aria-label="Navigation links">
+        <div class="nav-links" id="navLinks">
             <a href="index.html">Home</a>
             <a href="services.html">Services & Pricing</a>
             <a href="faq.html" class="active" aria-current="page">FAQ</a>
             <a href="contact.html">Start Project</a>
         </div>
         
-        <a href="contact.html" class="cta-btn" style="display: none;" id="desktopCta">Get Quote</a>
+        <a href="contact.html" class="cta-btn" id="desktopCta">Get Quote</a>
+        
+        <button class="burger-menu" id="burgerMenu" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 
     <!-- Main Content -->
-    <main class="container">
+    <main id="main-content" class="container">
         <!-- FAQ Header -->
         <section class="hero" style="padding-top: 5rem;">
             <h1>Frequently Asked Questions</h1>
@@ -45,10 +82,10 @@
             <div class="faq-category">
                 <h2><i class="fas fa-code" aria-hidden="true"></i> Web Development</h2>
                 
-                <div class="faq-item fade-in">
+                <div class="faq-item seo-fade-in">
                     <button class="faq-question" aria-expanded="false">
                         How long does web application development take?
-                        <span class="faq-icon" aria-hidden="true">+</span>
+                        <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
@@ -56,17 +93,17 @@
                             <p><strong>Complex Projects:</strong> 2-3 months with detailed planning</p>
                             <p><strong>Rapid MVP:</strong> 2-3 weeks for minimum viable product</p>
                             <div class="faq-cta-container" style="margin-top: 1.5rem;">
-                                <a href="contact.html" class="faq-cta" style="margin-bottom: 0.5rem;">Get Timeline Estimate</a>
-                                <a href="services.html#webapp" class="faq-cta" style="background: rgba(0, 242, 255, 0.1); color: var(--primary);">View Development Plans</a>
+                                <a href="contact.html" class="faq-cta">Get Timeline Estimate</a>
+                                <a href="services.html#webapp" class="faq-cta" style="background: rgba(0, 242, 255, 0.1); color: var(--primary); margin-top: 0.5rem;">View Development Plans</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="faq-item fade-in" style="animation-delay: 0.1s;">
+                <div class="faq-item seo-fade-in delay-1">
                     <button class="faq-question" aria-expanded="false">
                         What technologies do you use?
-                        <span class="faq-icon" aria-hidden="true">+</span>
+                        <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
@@ -88,10 +125,10 @@
             <div class="faq-category">
                 <h2><i class="fas fa-search" aria-hidden="true"></i> SEO Services</h2>
                 
-                <div class="faq-item fade-in">
+                <div class="faq-item seo-fade-in">
                     <button class="faq-question" aria-expanded="false">
                         When will I see SEO results?
-                        <span class="faq-icon" aria-hidden="true">+</span>
+                        <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
@@ -107,10 +144,10 @@
                     </div>
                 </div>
 
-                <div class="faq-item fade-in" style="animation-delay: 0.1s;">
+                <div class="faq-item seo-fade-in delay-1">
                     <button class="faq-question" aria-expanded="false">
                         Do you guarantee #1 rankings?
-                        <span class="faq-icon" aria-hidden="true">+</span>
+                        <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
@@ -132,10 +169,10 @@
             <div class="faq-category">
                 <h2><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Automation</h2>
                 
-                <div class="faq-item fade-in">
+                <div class="faq-item seo-fade-in">
                     <button class="faq-question" aria-expanded="false">
                         What can WhatsApp Automation do?
-                        <span class="faq-icon" aria-hidden="true">+</span>
+                        <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
@@ -161,10 +198,10 @@
             <div class="faq-category">
                 <h2><i class="fas fa-rupee-sign" aria-hidden="true"></i> Pricing & Support</h2>
                 
-                <div class="faq-item fade-in">
+                <div class="faq-item seo-fade-in">
                     <button class="faq-question" aria-expanded="false">
                         What's included in your pricing?
-                        <span class="faq-icon" aria-hidden="true">+</span>
+                        <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
@@ -182,10 +219,10 @@
                     </div>
                 </div>
 
-                <div class="faq-item fade-in" style="animation-delay: 0.1s;">
+                <div class="faq-item seo-fade-in delay-1">
                     <button class="faq-question" aria-expanded="false">
                         What support do you provide?
-                        <span class="faq-icon" aria-hidden="true">+</span>
+                        <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
@@ -210,13 +247,13 @@
         </section>
 
         <!-- Contact CTA -->
-        <section style="text-align: center; background: rgba(0, 242, 255, 0.02); border-radius: var(--radius); padding: 3rem 1.5rem;">
+        <section style="text-align: center; background: rgba(0, 242, 255, 0.02); border-radius: var(--radius); padding: 3rem 1.5rem; margin-top: 4rem;">
             <h2>Still Have Questions?</h2>
             <p style="max-width: 600px; margin: 0 auto 2rem;">Can't find what you're looking for? Contact us directly for personalized assistance.</p>
             <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 2rem;">
                 <a href="contact.html" class="cta-btn">Contact Us</a>
                 <a href="tel:+91XXXXXXXXXX" class="cta-btn" style="background: rgba(0, 242, 255, 0.1); color: var(--primary);">Call Now</a>
-                <a href="https://wa.me/91XXXXXXXXXX" class="cta-btn" style="background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);" target="_blank">
+                <a href="https://wa.me/91XXXXXXXXXX" class="cta-btn" style="background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);" target="_blank" rel="noopener">
                     <i class="fab fa-whatsapp"></i> WhatsApp
                 </a>
             </div>
@@ -225,7 +262,7 @@
 
     <!-- Floating Buttons -->
     <div class="floating-container">
-        <a href="https://wa.me/91XXXXXXXXXX" class="float-btn float-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+        <a href="https://wa.me/91XXXXXXXXXX" class="float-btn float-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
             <i class="fab fa-whatsapp" aria-hidden="true"></i>
         </a>
         <a href="tel:+91XXXXXXXXXX" class="float-btn float-phone" aria-label="Call us">
@@ -238,7 +275,7 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>Services</h4>
-                <a href="services.html">Web App Development</a>
+                <a href="services.html#webapp">Web App Development</a>
                 <a href="services.html#seo">SEO & Ranking</a>
                 <a href="services.html#ai">Chatbot Integration</a>
                 <a href="services.html#ads">Digital Marketing</a>
@@ -267,6 +304,20 @@
             &copy; <span id="currentYear"></span> Denisia Webops. All rights reserved.
         </div>
     </footer>
+
+    <!-- Service Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" aria-label="Close modal">&times;</button>
+            <h3 id="modal-title">Service Title</h3>
+            <p id="modal-description">Service description.</p>
+            <h4 style="color: var(--primary); margin: 1.5rem 0 1rem;">Why You Need This:</h4>
+            <ul id="modal-reasons">
+                <!-- Reasons will be added by JavaScript -->
+            </ul>
+            <a href="contact.html" class="cta-btn" style="display: block; text-align: center; margin-top: 2rem;">Start This Service</a>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
