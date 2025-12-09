@@ -1,14 +1,23 @@
-// script.js - Enhanced with animations and service modal
+// script.js - Enhanced with bug fixes and FAQ functionality
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Mobile Burger Menu Toggle
+    // 1. Mobile Burger Menu Toggle - FIXED
     const burgerMenu = document.getElementById('burgerMenu');
     const navLinks = document.getElementById('navLinks');
+    const body = document.body;
 
-    if (burgerMenu) {
-        burgerMenu.addEventListener('click', () => {
+    if (burgerMenu && navLinks) {
+        burgerMenu.addEventListener('click', (e) => {
+            e.stopPropagation();
             burgerMenu.classList.toggle('active');
             navLinks.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            if (navLinks.classList.contains('active')) {
+                body.style.overflow = 'hidden';
+            } else {
+                body.style.overflow = '';
+            }
         });
 
         // Close menu when clicking on links
@@ -16,7 +25,26 @@ document.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('click', () => {
                 burgerMenu.classList.remove('active');
                 navLinks.classList.remove('active');
+                body.style.overflow = '';
             });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navLinks.contains(e.target) && !burgerMenu.contains(e.target)) {
+                burgerMenu.classList.remove('active');
+                navLinks.classList.remove('active');
+                body.style.overflow = '';
+            }
+        });
+
+        // Close menu on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                burgerMenu.classList.remove('active');
+                navLinks.classList.remove('active');
+                body.style.overflow = '';
+            }
         });
     }
 
@@ -138,18 +166,45 @@ document.addEventListener('DOMContentLoaded', () => {
     if (closeBtn) {
         closeBtn.addEventListener('click', () => {
             modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
+            document.body.style.overflow = '';
         });
     }
 
     window.addEventListener('click', (event) => {
         if (event.target === modal) {
             modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
+            document.body.style.overflow = '';
         }
     });
 
-    // 4. SEO Animation Observer
+    // 4. FAQ Accordion Functionality
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            const isActive = question.classList.contains('active');
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-question').forEach(q => {
+                if (q !== question) {
+                    q.classList.remove('active');
+                    q.nextElementSibling.classList.remove('open');
+                }
+            });
+            
+            // Toggle current FAQ
+            question.classList.toggle('active');
+            
+            if (isActive) {
+                answer.classList.remove('open');
+            } else {
+                answer.classList.add('open');
+            }
+        });
+    });
+
+    // 5. SEO Animation Observer
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -179,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(element);
     });
 
-    // 5. Form submission enhancement
+    // 6. Form submission enhancement
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
@@ -191,7 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.textContent = 'Sending...';
             submitBtn.disabled = true;
             
-            // Simulate form submission (replace with actual API call)
+            // Simulate form submission
             setTimeout(() => {
                 submitBtn.textContent = 'Request Sent Successfully!';
                 submitBtn.style.background = 'linear-gradient(135deg, var(--success) 0%, #00cc6a 100%)';
@@ -210,7 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 6. Smooth scrolling for anchor links
+    // 7. Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -219,6 +274,13 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
+                // Close mobile menu if open
+                if (burgerMenu && navLinks) {
+                    burgerMenu.classList.remove('active');
+                    navLinks.classList.remove('active');
+                    body.style.overflow = '';
+                }
+                
                 window.scrollTo({
                     top: targetElement.offsetTop - 80,
                     behavior: 'smooth'
@@ -227,7 +289,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 7. Add animation to hero elements on load
+    // 8. Add animation to hero elements on load
     setTimeout(() => {
         document.querySelectorAll('.seo-fade-in, .seo-slide-in-left, .seo-slide-in-right, .seo-scale-up').forEach(el => {
             el.style.opacity = '1';
@@ -235,11 +297,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, 100);
 });
-
-// 8. Google Analytics integration (uncomment and add your ID)
-/*
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'YOUR_GA_ID');
-*/
