@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Denisia Webops</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("YOUR_PUBLIC_KEY"); // GET THIS FROM EMAILJS
+       })();
+    </script>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Denisia<span style="color:white">Webops</span></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services & Pricing</a>
+            <a href="contact.html" class="active">Start Project</a>
+        </div>
+    </nav>
+
+    <section>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h2>Let's Scale Your Business</h2>
+            <p style="text-align: center; margin-bottom: 40px; color: #aaa;">
+                Tell us about your vision. Answer these strategic questions so we can prepare the perfect roadmap for your growth.
+            </p>
+            
+            <form id="contact-form" class="card">
+                <div class="grid">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" name="user_name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Business Email</label>
+                        <input type="email" name="user_email" placeholder="john@company.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>What is your primary business goal right now?</label>
+                    <select name="business_goal">
+                        <option>Generating Leads / Sales</option>
+                        <option>Brand Awareness</option>
+                        <option>Automating Customer Support</option>
+                        <option>Launching a New Product</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Who is your ideal target audience?</label>
+                    <textarea name="target_audience" rows="2" placeholder="e.g., Small business owners in India aged 25-40..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>What are your top 3 competitors?</label>
+                    <textarea name="competitors" rows="2" placeholder="Knowing who you are up against helps us beat them."></textarea>
+                </div>
+
+                <div class="grid">
+                    <div class="form-group">
+                        <label>Current Website Traffic (Monthly)</label>
+                        <select name="traffic">
+                            <option>New / Zero</option>
+                            <option>100 - 1,000</option>
+                            <option>1,000 - 10,000</option>
+                            <option>10,000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Estimated Budget</label>
+                        <select name="budget">
+                            <option>₹50k - ₹1 Lakh</option>
+                            <option>₹1 Lakh - ₹3 Lakhs</option>
+                            <option>₹3 Lakhs+</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Do you need API or Chatbot Integrations?</label>
+                    <div style="margin-top: 10px;">
+                        <input type="radio" name="integration" value="Yes" style="width:auto"> Yes
+                        <input type="radio" name="integration" value="No" style="width:auto; margin-left: 20px;"> No
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Project Request</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Generate a service ID and Template ID in your EmailJS dashboard
+            emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+                .then(function() {
+                    alert('Request sent successfully! We will contact you at contact@denisiawebops.com shortly.');
+                }, function(error) {
+                    alert('Failed to send. Please try again.');
+                });
+        });
+    </script>
+</body>
+</html>
