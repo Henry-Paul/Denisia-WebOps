@@ -2,366 +2,234 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     
-    <!-- SEO Optimized Title -->
-    <title>Web Development FAQ | SEO, WebApp & Digital Marketing Questions</title>
-    
-    <!-- SEO Meta Description -->
-    <meta name="description" content="Comprehensive FAQ for web development, SEO, digital marketing, WhatsApp automation and AI chatbot services. Get expert answers to common business questions.">
-    
-    <!-- SEO Keywords -->
-    <meta name="keywords" content="web development FAQ, SEO questions, digital marketing FAQ, WhatsApp automation FAQ, AI chatbot questions, website maintenance, hosting, pricing">
-    
-    <!-- Schema.org FAQ Markup -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "How long does it take to develop a custom web application?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Our standard timeline is 1 month for development and 10 days for rigorous testing. Complex projects may require additional time, which we outline during the consultation phase."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is your SEO process and when will I see results?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We follow a 10-day SEO setup process including technical audit and optimization. Initial improvements appear in 30 days, with significant results visible within 3-6 months."
-                }
-            }
-        ]
-    }
-    </script>
+    <title>FAQ | Web Development, SEO & Digital Marketing Questions</title>
+    <meta name="description" content="Find answers to common questions about web development, SEO, digital marketing, WhatsApp automation, and AI chatbot services.">
     
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav>
-        <a href="index.html" class="logo">Denisia<span style="color:white">Webops</span></a>
-        <div class="nav-links" id="navLinks">
+    <nav aria-label="Main navigation">
+        <a href="index.html" class="logo">Denisia<span>Webops</span></a>
+        
+        <button class="burger-menu" id="burgerMenu" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <div class="nav-links" id="navLinks" aria-label="Navigation links">
             <a href="index.html">Home</a>
             <a href="services.html">Services & Pricing</a>
-            <a href="faq.html" class="active">FAQ</a>
+            <a href="faq.html" class="active" aria-current="page">FAQ</a>
             <a href="contact.html">Start Project</a>
         </div>
-        <a href="contact.html" class="cta-btn">Get Quote</a>
-        <div class="burger-menu" id="burgerMenu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+        
+        <a href="contact.html" class="cta-btn" style="display: none;" id="desktopCta">Get Quote</a>
     </nav>
 
-    <!-- Main Content Wrapper -->
-    <div class="main-wrapper">
+    <!-- Main Content -->
+    <main class="container">
         <!-- FAQ Header -->
-        <section class="hero" style="padding: 100px 5% 80px;">
-            <h1 class="seo-fade-in">Frequently Asked Questions</h1>
-            <p class="seo-fade-in delay-1" style="max-width: 800px;">
-                Find answers to common questions about our services, processes, and pricing. Can't find what you're looking for? 
-                <a href="contact.html" style="color: var(--primary);">Contact us directly</a> for personalized assistance.
-            </p>
-        </section>
-
-        <!-- Search FAQ -->
-        <section style="margin: 0 0 60px;">
-            <div class="card" style="max-width: 800px; margin: 0 auto;">
-                <h3 style="text-align: center; margin-bottom: 20px;"><i class="fas fa-search"></i> Search FAQs</h3>
-                <input type="text" id="faqSearch" placeholder="Type your question here..." style="width: 100%; padding: 15px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; color: white;">
-                <p style="text-align: center; margin-top: 15px; color: var(--text-muted); font-size: 0.9rem;">
-                    Try searching for: "pricing", "timeline", "support", "SEO", "WhatsApp"
-                </p>
-            </div>
+        <section class="hero" style="padding-top: 5rem;">
+            <h1>Frequently Asked Questions</h1>
+            <p>Find quick answers to common questions about our services and processes.</p>
         </section>
 
         <!-- FAQ Categories -->
         <section>
-            <!-- Web Development FAQs -->
+            <!-- Web Development FAQ -->
             <div class="faq-category">
-                <h3 class="seo-fade-in"><i class="fas fa-code"></i> Web Development & Applications</h3>
-                <div class="faq-container">
-                    <div class="faq-item seo-fade-in delay-1">
-                        <button class="faq-question">
-                            What technologies do you use for web development?
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="faq-answer">
-                            <p>We use modern technologies including:</p>
-                            <ul style="margin: 10px 0 15px 20px; color: var(--text-muted);">
-                                <li><strong>Frontend:</strong> React.js, Vue.js, Next.js</li>
-                                <li><strong>Backend:</strong> Node.js, Python (Django/Flask), PHP (Laravel)</li>
-                                <li><strong>Databases:</strong> PostgreSQL, MongoDB, MySQL</li>
-                                <li><strong>Mobile:</strong> React Native, Flutter</li>
-                                <li><strong>Cloud:</strong> AWS, Google Cloud, Azure</li>
-                            </ul>
-                            <p>We choose the best stack based on your project requirements.</p>
-                            <a href="contact.html" class="cta-btn faq-cta">Discuss Technology Stack</a>
+                <h2><i class="fas fa-code" aria-hidden="true"></i> Web Development</h2>
+                
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        How long does web application development take?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p><strong>Standard Timeline:</strong> 1 month development + 10 days testing</p>
+                            <p><strong>Complex Projects:</strong> 2-3 months with detailed planning</p>
+                            <p><strong>Rapid MVP:</strong> 2-3 weeks for minimum viable product</p>
+                            <div class="faq-cta-container" style="margin-top: 1.5rem;">
+                                <a href="contact.html" class="faq-cta" style="margin-bottom: 0.5rem;">Get Timeline Estimate</a>
+                                <a href="services.html#webapp" class="faq-cta" style="background: rgba(0, 242, 255, 0.1); color: var(--primary);">View Development Plans</a>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="faq-item seo-fade-in delay-2">
-                        <button class="faq-question">
-                            Do you provide both design and development?
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Yes, we offer end-to-end services including:</p>
-                            <ul style="margin: 10px 0 15px 20px; color: var(--text-muted);">
-                                <li>UI/UX Design & Prototyping</li>
-                                <li>Frontend & Backend Development</li>
-                                <li>Database Design & Implementation</li>
-                                <li>Testing & Quality Assurance</li>
-                                <li>Deployment & Hosting Setup</li>
-                                <li>Ongoing Maintenance & Support</li>
+                <div class="faq-item fade-in" style="animation-delay: 0.1s;">
+                    <button class="faq-question" aria-expanded="false">
+                        What technologies do you use?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>We use modern, scalable technologies:</p>
+                            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                                <li>Frontend: React, Vue.js, Next.js</li>
+                                <li>Backend: Node.js, Python, PHP</li>
+                                <li>Mobile: React Native, Flutter</li>
+                                <li>Databases: PostgreSQL, MongoDB</li>
+                                <li>Cloud: AWS, Google Cloud</li>
                             </ul>
-                            <a href="services.html#webapp" class="cta-btn faq-cta">View Web Development Services</a>
-                        </div>
-                    </div>
-
-                    <div class="faq-item seo-fade-in delay-3">
-                        <button class="faq-question">
-                            Can you work with my existing website or system?
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Absolutely! We specialize in:</p>
-                            <ul style="margin: 10px 0 15px 20px; color: var(--text-muted);">
-                                <li>Website Redesign & Migration</li>
-                                <li>API Integration with existing systems</li>
-                                <li>Legacy System Modernization</li>
-                                <li>Third-party Service Integration</li>
-                                <li>Performance Optimization</li>
-                            </ul>
-                            <p>We'll analyze your current setup and provide a seamless integration plan.</p>
-                            <a href="contact.html" class="cta-btn faq-cta">Request Integration Assessment</a>
+                            <a href="contact.html" class="faq-cta">Discuss Tech Stack</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- SEO FAQs -->
+            <!-- SEO FAQ -->
             <div class="faq-category">
-                <h3 class="seo-fade-in"><i class="fas fa-search"></i> SEO & Digital Marketing</h3>
-                <div class="faq-container">
-                    <div class="faq-item seo-fade-in delay-1">
-                        <button class="faq-question">
-                            How soon will I see SEO results?
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="faq-answer">
-                            <p>SEO timeline varies, but here's what to expect:</p>
-                            <ul style="margin: 10px 0 15px 20px; color: var(--text-muted);">
-                                <li><strong>0-30 days:</strong> Technical improvements, initial optimizations</li>
-                                <li><strong>1-3 months:</strong> Ranking improvements, traffic increase</li>
-                                <li><strong>3-6 months:</strong> Significant traffic growth, lead generation</li>
-                                <li><strong>6+ months:</strong> Sustained rankings, business growth</li>
-                            </ul>
-                            <p>We provide monthly reports tracking all key metrics.</p>
-                            <a href="services.html#seo" class="cta-btn faq-cta">View SEO Packages</a>
+                <h2><i class="fas fa-search" aria-hidden="true"></i> SEO Services</h2>
+                
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        When will I see SEO results?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p><strong>Initial Setup (10 days):</strong> Technical audit & basic optimizations</p>
+                            <p><strong>First Month:</strong> Initial ranking improvements</p>
+                            <p><strong>3-6 Months:</strong> Significant traffic growth</p>
+                            <p><strong>6+ Months:</strong> Sustained rankings & business growth</p>
+                            <div class="faq-cta-container" style="margin-top: 1.5rem;">
+                                <a href="services.html#seo" class="faq-cta">View SEO Packages</a>
+                                <a href="contact.html" class="faq-cta" style="background: rgba(0, 242, 255, 0.1); color: var(--primary); margin-left: 0.5rem;">Get SEO Audit</a>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="faq-item seo-fade-in delay-2">
-                        <button class="faq-question">
-                            Do you guarantee #1 ranking on Google?
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="faq-answer">
-                            <p>No ethical SEO company guarantees specific rankings due to Google's constantly changing algorithms. However, we guarantee:</p>
-                            <ul style="margin: 10px 0 15px 20px; color: var(--text-muted);">
-                                <li>Improved organic traffic (typically 30-300% increase)</li>
-                                <li>Better keyword rankings</li>
-                                <li>Increased qualified leads</li>
-                                <li>Transparent reporting</li>
-                                <li>Monthly strategy adjustments</li>
+                <div class="faq-item fade-in" style="animation-delay: 0.1s;">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you guarantee #1 rankings?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>We don't guarantee specific rankings (no ethical SEO company does), but we guarantee:</p>
+                            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                                <li>Increased organic traffic (typically 30-300%)</li>
+                                <li>Improved keyword rankings</li>
+                                <li>More qualified leads</li>
+                                <li>Transparent monthly reporting</li>
+                                <li>Continuous strategy optimization</li>
                             </ul>
-                            <a href="contact.html" class="cta-btn faq-cta">Get SEO Audit</a>
-                        </div>
-                    </div>
-
-                    <div class="faq-item seo-fade-in delay-3">
-                        <button class="faq-question">
-                            What's included in your digital marketing packages?
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Our digital marketing includes:</p>
-                            <ul style="margin: 10px 0 15px 20px; color: var(--text-muted);">
-                                <li>Strategy Development & Planning</li>
-                                <li>Ad Creative Design & Copywriting</li>
-                                <li>Target Audience Research</li>
-                                <li>Campaign Setup & Management</li>
-                                <li>A/B Testing & Optimization</li>
-                                <li>Performance Analytics & Reporting</li>
-                                <li>Conversion Rate Optimization</li>
-                            </ul>
-                            <a href="services.html#ads" class="cta-btn faq-cta">View Marketing Packages</a>
+                            <a href="contact.html" class="faq-cta">Get SEO Strategy</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Automation & Integration FAQs -->
+            <!-- WhatsApp Automation FAQ -->
             <div class="faq-category">
-                <h3 class="seo-fade-in"><i class="fas fa-robot"></i> WhatsApp Automation & AI Chatbots</h3>
-                <div class="faq-container">
-                    <div class="faq-item seo-fade-in delay-1">
-                        <button class="faq-question">
-                            What can WhatsApp Automation do for my business?
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="faq-answer">
-                            <p>WhatsApp Automation can transform your business communication:</p>
-                            <ul style="margin: 10px 0 15px 20px; color: var(--text-muted);">
-                                <li><strong>24/7 Customer Support:</strong> Instant responses to common queries</li>
-                                <li><strong>Lead Generation:</strong> Automatically capture and qualify leads</li>
-                                <li><strong>Sales Automation:</strong> Send product catalogs, process orders</li>
-                                <li><strong>Appointment Booking:</strong> Schedule meetings automatically</li>
-                                <li><strong>Payment Reminders:</strong> Send automated payment notifications</li>
-                                <li><strong>Order Updates:</strong> Real-time order tracking updates</li>
+                <h2><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Automation</h2>
+                
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        What can WhatsApp Automation do?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Transform your business communication:</p>
+                            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                                <li>24/7 customer support</li>
+                                <li>Automated lead generation</li>
+                                <li>Order processing & tracking</li>
+                                <li>Appointment scheduling</li>
+                                <li>Payment reminders</li>
+                                <li>Broadcast campaigns</li>
                             </ul>
-                            <a href="services.html#whatsapp" class="cta-btn faq-cta">Explore WhatsApp Automation</a>
-                        </div>
-                    </div>
-
-                    <div class="faq-item seo-fade-in delay-2">
-                        <button class="faq-question">
-                            How intelligent are your AI chatbots?
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Our AI chatbots use advanced natural language processing to:</p>
-                            <ul style="margin: 10px 0 15px 20px; color: var(--text-muted);">
-                                <li>Understand context and user intent</li>
-                                <li>Learn from conversations to improve responses</li>
-                                <li>Handle multiple languages</li>
-                                <li>Integrate with your CRM and databases</li>
-                                <li>Escalate complex queries to human agents</li>
-                                <li>Provide personalized recommendations</li>
-                            </ul>
-                            <p>They can handle 80-90% of common customer queries automatically.</p>
-                            <a href="services.html#chatbot" class="cta-btn faq-cta">View Chatbot Features</a>
+                            <div class="faq-cta-container" style="margin-top: 1.5rem;">
+                                <a href="services.html#whatsapp" class="faq-cta" style="background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);">WhatsApp Automation</a>
+                                <a href="contact.html" class="faq-cta" style="background: rgba(37, 211, 102, 0.1); color: #25D366; margin-left: 0.5rem;">Book Demo</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Pricing & Support FAQs -->
+            <!-- Pricing & Support FAQ -->
             <div class="faq-category">
-                <h3 class="seo-fade-in"><i class="fas fa-rupee-sign"></i> Pricing & Support</h3>
-                <div class="faq-container">
-                    <div class="faq-item seo-fade-in delay-1">
-                        <button class="faq-question">
-                            What's included in your pricing?
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="faq-answer">
-                            <p>All our prices include:</p>
-                            <ul style="margin: 10px 0 15px 20px; color: var(--text-muted);">
-                                <li>Strategy & Planning Sessions</li>
-                                <li>Development/Implementation</li>
-                                <li>Testing & Quality Assurance</li>
-                                <li>Deployment & Launch Support</li>
-                                <li>Basic Training & Documentation</li>
-                                <li>Initial Support Period</li>
+                <h2><i class="fas fa-rupee-sign" aria-hidden="true"></i> Pricing & Support</h2>
+                
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        What's included in your pricing?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p><strong>All prices include:</strong></p>
+                            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                                <li>Strategy & planning sessions</li>
+                                <li>Development/implementation</li>
+                                <li>Testing & quality assurance</li>
+                                <li>Deployment & launch support</li>
+                                <li>Basic training & documentation</li>
+                                <li>Initial support period</li>
                             </ul>
-                            <p>Additional costs may apply for:</p>
-                            <ul style="margin: 10px 0 15px 20px; color: var(--text-muted);">
-                                <li>Third-party licenses/subscriptions</li>
-                                <li>Custom integrations</li>
-                                <li>Advanced features</li>
-                                <li>Ongoing maintenance plans</li>
-                            </ul>
-                            <a href="services.html" class="cta-btn faq-cta">View Detailed Pricing</a>
+                            <a href="services.html" class="faq-cta">View Detailed Pricing</a>
                         </div>
                     </div>
+                </div>
 
-                    <div class="faq-item seo-fade-in delay-2">
-                        <button class="faq-question">
-                            What support do you provide after project completion?
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Our support includes:</p>
-                            <ul style="margin: 10px 0 15px 20px; color: var(--text-muted);">
-                                <li><strong>Free Support:</strong> 6 months for web apps, 30 days for other services</li>
-                                <li><strong>Maintenance Plans:</strong> Monthly/quarterly options available</li>
-                                <li><strong>Response Times:</strong> Priority support for enterprise clients</li>
-                                <li><strong>Updates:</strong> Security patches and minor updates</li>
-                                <li><strong>Training:</strong> Additional training sessions available</li>
+                <div class="faq-item fade-in" style="animation-delay: 0.1s;">
+                    <button class="faq-question" aria-expanded="false">
+                        What support do you provide?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p><strong>Free Support Included:</strong></p>
+                            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                                <li>Web Apps: 6 months free support</li>
+                                <li>SEO/Marketing: 30 days free support</li>
+                                <li>Bug fixes & minor updates</li>
+                                <li>Performance monitoring</li>
                             </ul>
-                            <p>We offer various support packages based on your needs.</p>
-                            <a href="contact.html" class="cta-btn faq-cta">Get Support Package Quote</a>
-                        </div>
-                    </div>
-
-                    <div class="faq-item seo-fade-in delay-3">
-                        <button class="faq-question">
-                            Do you offer payment plans or financing?
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Yes, we offer flexible payment options:</p>
-                            <ul style="margin: 10px 0 15px 20px; color: var(--text-muted);">
-                                <li><strong>Milestone Payments:</strong> Pay in stages as work progresses</li>
-                                <li><strong>Monthly Retainers:</strong> For ongoing services like SEO & marketing</li>
-                                <li><strong>Quarterly Payments:</strong> For long-term projects</li>
-                                <li><strong>Enterprise Plans:</strong> Custom payment schedules</li>
-                                <li><strong>Startup Discounts:</strong> Special rates for early-stage businesses</li>
+                            <p><strong>Available Maintenance Plans:</strong></p>
+                            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                                <li>Basic: ₹5,000/month</li>
+                                <li>Professional: ₹10,000/month</li>
+                                <li>Enterprise: Custom pricing</li>
                             </ul>
-                            <p>Contact us to discuss payment options that work for your business.</p>
-                            <a href="contact.html" class="cta-btn faq-cta">Discuss Payment Options</a>
+                            <a href="contact.html" class="faq-cta">Get Support Plan</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Still Have Questions -->
-        <section style="text-align: center; margin-top: 80px;">
-            <h2 class="seo-fade-in">Still Have Questions?</h2>
-            <p class="seo-fade-in delay-1" style="max-width: 600px; margin: 0 auto 30px; color: var(--text-muted);">
-                Can't find the answer you're looking for? Our team is ready to help you with personalized advice.
-            </p>
-            <div class="grid" style="max-width: 800px; margin: 50px auto;">
-                <div class="card seo-scale-up delay-1" style="text-align: center;">
-                    <i class="fas fa-comments fa-2x" style="color:var(--primary); margin-bottom: 15px;"></i>
-                    <h4>Live Chat Support</h4>
-                    <p>Chat with our experts in real-time</p>
-                    <a href="https://wa.me/91XXXXXXXXXX" class="cta-btn" style="margin-top: 15px; display: inline-block;" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Start Chat
-                    </a>
-                </div>
-                <div class="card seo-scale-up delay-2" style="text-align: center;">
-                    <i class="fas fa-phone-alt fa-2x" style="color:var(--success); margin-bottom: 15px;"></i>
-                    <h4>Schedule a Call</h4>
-                    <p>Book a free 30-minute consultation</p>
-                    <a href="contact.html" class="cta-btn" style="margin-top: 15px; display: inline-block;">
-                        <i class="fas fa-calendar-alt"></i> Book Now
-                    </a>
-                </div>
+        <!-- Contact CTA -->
+        <section style="text-align: center; background: rgba(0, 242, 255, 0.02); border-radius: var(--radius); padding: 3rem 1.5rem;">
+            <h2>Still Have Questions?</h2>
+            <p style="max-width: 600px; margin: 0 auto 2rem;">Can't find what you're looking for? Contact us directly for personalized assistance.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 2rem;">
+                <a href="contact.html" class="cta-btn">Contact Us</a>
+                <a href="tel:+91XXXXXXXXXX" class="cta-btn" style="background: rgba(0, 242, 255, 0.1); color: var(--primary);">Call Now</a>
+                <a href="https://wa.me/91XXXXXXXXXX" class="cta-btn" style="background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
             </div>
         </section>
-    </div>
+    </main>
 
     <!-- Floating Buttons -->
     <div class="floating-container">
-        <a href="https://wa.me/91XXXXXXXXXX" class="float-btn float-whatsapp" target="_blank" title="Chat on WhatsApp">
-            <i class="fab fa-whatsapp"></i>
+        <a href="https://wa.me/91XXXXXXXXXX" class="float-btn float-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
         </a>
-        <a href="tel:+91XXXXXXXXXX" class="float-btn float-phone" title="Call Us">
-            <i class="fas fa-phone-alt"></i>
+        <a href="tel:+91XXXXXXXXXX" class="float-btn float-phone" aria-label="Call us">
+            <i class="fas fa-phone-alt" aria-hidden="true"></i>
         </a>
     </div>
 
@@ -370,7 +238,7 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>Services</h4>
-                <a href="services.html#webapp">Web App Development</a>
+                <a href="services.html">Web App Development</a>
                 <a href="services.html#seo">SEO & Ranking</a>
                 <a href="services.html#ai">Chatbot Integration</a>
                 <a href="services.html#ads">Digital Marketing</a>
@@ -378,58 +246,28 @@
             </div>
             <div class="footer-section">
                 <h4>Company</h4>
-                <a href="index.html#about">Our Process</a>
-                <a href="services.html">Pricing</a>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services & Pricing</a>
                 <a href="faq.html">FAQ</a>
-                <a href="contact.html">Free Consultation</a>
+                <a href="contact.html">Contact</a>
             </div>
             <div class="footer-section">
                 <h4>Contact Us</h4>
-                <p><i class="fas fa-envelope"></i> contact@denisiawebops.com</p>
-                <p><i class="fas fa-phone"></i> +91 XXXXXXXXXX</p>
-                <p><i class="fas fa-map-marker-alt"></i> Based in India</p>
+                <p><i class="fas fa-envelope" aria-hidden="true"></i> contact@denisiawebops.com</p>
+                <p><i class="fas fa-phone" aria-hidden="true"></i> +91 XXXXXXXXXX</p>
+                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Based in India</p>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin" title="LinkedIn"></i></a>
-                    <a href="#"><i class="fab fa-twitter" title="Twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram" title="Instagram"></i></a>
-                    <a href="#"><i class="fab fa-facebook" title="Facebook"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
         <div class="copyright">
-            &copy; <span id="currentYear"></span> Denisia Webops. All rights reserved. Launched Dec 9, 2025.
+            &copy; <span id="currentYear"></span> Denisia Webops. All rights reserved.
         </div>
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        // FAQ Search Functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const faqSearch = document.getElementById('faqSearch');
-            if (faqSearch) {
-                faqSearch.addEventListener('input', function() {
-                    const searchTerm = this.value.toLowerCase();
-                    const faqItems = document.querySelectorAll('.faq-item');
-                    
-                    faqItems.forEach(item => {
-                        const question = item.querySelector('.faq-question').textContent.toLowerCase();
-                        const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
-                        
-                        if (question.includes(searchTerm) || answer.includes(searchTerm)) {
-                            item.style.display = 'block';
-                            
-                            // Open matching FAQ
-                            if (searchTerm.length > 2) {
-                                item.querySelector('.faq-question').classList.add('active');
-                                item.querySelector('.faq-answer').classList.add('open');
-                            }
-                        } else {
-                            item.style.display = 'none';
-                        }
-                    });
-                });
-            }
-        });
-    </script>
 </body>
 </html>
