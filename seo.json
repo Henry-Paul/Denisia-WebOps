@@ -1,31 +1,175 @@
 {
   "project_name": "Denisia Webops",
-  "base_keywords": [
-    "Custom Web Application Development",
-    "High-Performance SEO Services India",
-    "WhatsApp Automation",
-    "AI Chatbot Integration",
-    "Digital Marketing Ads"
+  "base_url": "https://denisiawebops.com",
+  "author": "Denisia Webops",
+  "language": "en",
+  "region": "IN",
+  "target_market": "India",
+  
+  "primary_keywords": [
+    "Custom Web Application Development India",
+    "SEO Services India",
+    "Digital Marketing Agency India",
+    "Website Development Company",
+    "E-commerce Solutions India",
+    "Mobile App Development",
+    "Google Ranking Services",
+    "Web Design Services India",
+    "Chatbot Integration Services",
+    "WhatsApp Automation Business",
+    "Affordable Web Development",
+    "SEO Optimization Company",
+    "PPC Advertising India",
+    "Social Media Marketing",
+    "Content Marketing Services"
   ],
+  
+  "secondary_keywords": [
+    "Best web developers in India",
+    "Top SEO company 2025",
+    "Web application development cost",
+    "How to rank website on Google",
+    "Digital marketing packages pricing",
+    "WhatsApp Business API integration",
+    "AI chatbot for website",
+    "Increase website traffic",
+    "Lead generation strategies",
+    "Online business growth",
+    "Startup website development",
+    "Enterprise web solutions",
+    "Website maintenance services",
+    "Local SEO services",
+    "E-commerce SEO optimization"
+  ],
+  
   "pages": [
     {
       "file": "index.html",
-      "title": "Denisia Webops | Custom Web App Development & SEO Growth Agency",
-      "description": "Launch your future with Denisia Webops. We build scalable WebApps, integrate smart AI chatbots, and guarantee Page 1 ranking with ROI-driven SEO services."
+      "title": "Custom WebApp Development & SEO Services India | Denisia Webops",
+      "description": "Top-rated WebApp Development, SEO Optimization & Digital Marketing Agency in India. Build scalable web applications, rank #1 on Google, and drive targeted traffic. 300% average ROI guaranteed.",
+      "h1": "Turn Your Business Idea Into A Digital Powerhouse",
+      "canonical": "/",
+      "og_image": "https://denisiawebops.com/images/og-home.jpg",
+      "schema_type": "ProfessionalService",
+      "breadcrumbs": [
+        {"name": "Home", "url": "/"}
+      ]
     },
     {
       "file": "services.html",
-      "title": "Our Services & Pricing | Web Development, SEO, Chatbot Integration",
-      "description": "Explore our transparent pricing for Custom WebApps, AI Chatbot integration, Precision Digital Marketing (₹12,000/ad), and SEO Dominance (₹40,000/month)."
+      "title": "Web Development Services Pricing India | SEO, WebApp & Marketing Plans",
+      "description": "Affordable Web Development Services in India. Custom WebApps from ₹40k, SEO packages ₹40k/month, Digital Marketing ₹12k/ad. WhatsApp Automation & AI Chatbot solutions available.",
+      "h1": "Our Powerhouse Plans",
+      "canonical": "/services.html",
+      "og_image": "https://denisiawebops.com/images/og-services.jpg",
+      "schema_type": "Service",
+      "breadcrumbs": [
+        {"name": "Home", "url": "/"},
+        {"name": "Services", "url": "/services.html"}
+      ]
     },
     {
       "file": "contact.html",
-      "title": "Start Your Project | Free WebApp Development Consultation",
-      "description": "Ready to build? Answer our outstanding business questions to receive a tailored roadmap for your custom WebApp and digital marketing strategy."
+      "title": "Start Your WebApp Project | Free Development Consultation India",
+      "description": "Get a free consultation for your custom web application. Share your business goals and receive a detailed roadmap with pricing. No obligation, expert advice guaranteed.",
+      "h1": "Let's Scale Your Business",
+      "canonical": "/contact.html",
+      "og_image": "https://denisiawebops.com/images/og-contact.jpg",
+      "schema_type": "ContactPage",
+      "breadcrumbs": [
+        {"name": "Home", "url": "/"},
+        {"name": "Contact", "url": "/contact.html"}
+      ]
     }
   ],
-  "tags_for_search_consoles": {
-    "google_site_verification": "YOUR_GOOGLE_VERIFICATION_TAG",
-    "bing_site_verification": "YOUR_BING_VERIFICATION_TAG"
+  
+  "search_console_verification": {
+    "google": "YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE",
+    "bing": "YOUR_BING_WEBMASTER_VERIFICATION_CODE",
+    "yandex": "YOUR_YANDEX_WEBMASTER_VERIFICATION_CODE"
+  },
+  
+  "analytics": {
+    "google_analytics": "YOUR_GA4_MEASUREMENT_ID",
+    "google_tag_manager": "YOUR_GTM_CONTAINER_ID",
+    "facebook_pixel": "YOUR_FACEBOOK_PIXEL_ID"
+  },
+  
+  "social_profiles": {
+    "linkedin": "https://linkedin.com/company/denisia-webops",
+    "twitter": "https://twitter.com/denisiawebops",
+    "facebook": "https://facebook.com/denisiawebops",
+    "instagram": "https://instagram.com/denisiawebops"
+  },
+  
+  "structured_data": {
+    "organization": {
+      "@type": "Organization",
+      "name": "Denisia Webops",
+      "url": "https://denisiawebops.com",
+      "logo": "https://denisiawebops.com/images/logo.png",
+      "description": "Custom Web Application Development and Digital Marketing Agency",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "India"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-XXXXXXXXXX",
+        "contactType": "customer service"
+      }
+    },
+    "service_offerings": [
+      {
+        "@type": "Service",
+        "serviceType": "Web Development",
+        "provider": {
+          "@type": "Organization",
+          "name": "Denisia Webops"
+        },
+        "areaServed": "India",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Web Development Services"
+        }
+      }
+    ]
+  },
+  
+  "sitemap": {
+    "include": ["index.html", "services.html", "contact.html", "about.html", "portfolio.html"],
+    "change_frequency": "weekly",
+    "priority": {
+      "index.html": 1.0,
+      "services.html": 0.9,
+      "contact.html": 0.8
+    }
+  },
+  
+  "performance_optimization": {
+    "image_optimization": true,
+    "lazy_loading": true,
+    "minify_css": true,
+    "minify_js": true,
+    "brotli_compression": true,
+    "cache_headers": true
+  },
+  
+  "last_updated": "2025-12-09",
+  "next_seo_audit": "2026-01-09",
+  "seo_score_target": 95,
+  
+  "competitor_analysis": {
+    "primary_competitors": [
+      "Web development companies in India",
+      "SEO agencies in major cities",
+      "Digital marketing freelancers"
+    ],
+    "differentiating_factors": [
+      "Fixed 10-day SEO setup",
+      "1-month webapp development guarantee",
+      "300% ROI promise",
+      "WhatsApp automation specialization"
+    ]
   }
 }
