@@ -1,0 +1,31 @@
+{
+  "project_name": "Denisia Webops",
+  "base_keywords": [
+    "Custom Web Application Development",
+    "High-Performance SEO Services India",
+    "WhatsApp Automation",
+    "AI Chatbot Integration",
+    "Digital Marketing Ads"
+  ],
+  "pages": [
+    {
+      "file": "index.html",
+      "title": "Denisia Webops | Custom Web App Development & SEO Growth Agency",
+      "description": "Launch your future with Denisia Webops. We build scalable WebApps, integrate smart AI chatbots, and guarantee Page 1 ranking with ROI-driven SEO services."
+    },
+    {
+      "file": "services.html",
+      "title": "Our Services & Pricing | Web Development, SEO, Chatbot Integration",
+      "description": "Explore our transparent pricing for Custom WebApps, AI Chatbot integration, Precision Digital Marketing (₹12,000/ad), and SEO Dominance (₹40,000/month)."
+    },
+    {
+      "file": "contact.html",
+      "title": "Start Your Project | Free WebApp Development Consultation",
+      "description": "Ready to build? Answer our outstanding business questions to receive a tailored roadmap for your custom WebApp and digital marketing strategy."
+    }
+  ],
+  "tags_for_search_consoles": {
+    "google_site_verification": "YOUR_GOOGLE_VERIFICATION_TAG",
+    "bing_site_verification": "YOUR_BING_VERIFICATION_TAG"
+  }
+}
