@@ -2,217 +2,380 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     
     <!-- SEO Optimized Title -->
-    <title>Web Development Services Pricing India | SEO, WebApp & Marketing</title>
+    <title>Services & Pricing | Web Development, SEO & Digital Marketing India</title>
     
     <!-- SEO Meta Description -->
-    <meta name="description" content="Affordable Web Development Services in India. Custom WebApps from ₹40k, SEO packages ₹40k/month, Digital Marketing ₹12k/ad. Free consultation available.">
+    <meta name="description" content="Professional web development services in India. Custom WebApps from ₹40k, SEO packages ₹40k/month, Digital Marketing ₹12k/ad. WhatsApp Automation & AI Chatbot solutions.">
     
     <!-- SEO Keywords -->
-    <meta name="keywords" content="web development pricing India, SEO services cost, digital marketing packages, custom web application development, affordable web design, monthly SEO packages, PPC advertising rates">
+    <meta name="keywords" content="web development pricing India, SEO services cost, digital marketing packages, custom web application development, affordable web design, monthly SEO packages, WhatsApp automation services">
     
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Services & Pricing | Denisia Webops">
+    <meta property="og:description" content="Explore our professional web development, SEO, and digital marketing services with transparent pricing.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://denisiawebops.com/services.html">
+    
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Denisia Webops Services",
+        "description": "Professional web development, SEO, and digital marketing services",
+        "serviceType": [
+            "Web Development",
+            "SEO Services",
+            "Digital Marketing",
+            "WhatsApp Automation",
+            "AI Chatbot Integration"
+        ],
+        "areaServed": {
+            "@type": "Country",
+            "name": "India"
+        },
+        "offers": {
+            "@type": "AggregateOffer",
+            "lowPrice": "12000",
+            "highPrice": "40000",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock"
+        }
+    }
+    </script>
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <nav>
-        <a href="index.html" class="logo">Denisia<span style="color:white">Webops</span></a>
-        <div class="nav-links" id="navLinks">
+    <!-- Navigation -->
+    <nav aria-label="Main navigation">
+        <a href="index.html" class="logo" aria-label="Denisia Webops Home">
+            Denisia<span>Webops</span>
+        </a>
+        
+        <button class="burger-menu" id="burgerMenu" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <div class="nav-links" id="navLinks" aria-label="Navigation links">
             <a href="index.html">Home</a>
-            <a href="services.html" class="active">Services & Pricing</a>
+            <a href="services.html" class="active" aria-current="page">Services & Pricing</a>
+            <a href="faq.html">FAQ</a>
             <a href="contact.html">Start Project</a>
-            <a href="faq.html" class="active">Start FAQs</a>
         </div>
-        <a href="contact.html" class="cta-btn">Get Quote</a>
-        <div class="burger-menu" id="burgerMenu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+        
+        <a href="contact.html" class="cta-btn" style="display: none;" id="desktopCta">Get Quote</a>
     </nav>
 
-    <section>
-        <h2 class="seo-fade-in">Our Powerhouse Plans</h2>
-        <p style="text-align: center; color: var(--text-muted); max-width: 800px; margin: 0 auto 50px;" class="seo-fade-in delay-1">
-            Click on any service to see detailed benefits and why you need it for your business growth.
-        </p>
-        
-        <div class="grid">
-            <!-- Digital Marketing -->
-            <div class="card seo-slide-in-left delay-1" data-service="ads">
-                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
-                    <div style="width: 50px; height: 50px; background: rgba(0, 242, 255, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-bullhorn fa-lg" style="color:var(--primary)"></i>
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero" style="padding-top: 5rem;">
+            <h1>Our Powerhouse Plans</h1>
+            <p>Professional services with transparent pricing. Click on any service to see detailed benefits.</p>
+        </section>
+
+        <!-- Services Grid -->
+        <section>
+            <div class="grid">
+                <!-- Digital Marketing -->
+                <div class="card fade-in" data-service="ads">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="width: 50px; height: 50px; background: rgba(0, 242, 255, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-bullhorn fa-lg" style="color:var(--primary)"></i>
+                        </div>
+                        <h3 style="margin: 0;">Digital Marketing</h3>
                     </div>
-                    <h3>Digital Marketing</h3>
+                    <p>High-conversion ad campaigns targeting your ideal customer demographics.</p>
+                    <div class="price">₹12,000 <span style="font-size:1rem; color:var(--text-muted)">/ per ad</span></div>
+                    <ul style="list-style:none; margin:1.5rem 0; padding:0; color:var(--text-light);">
+                        <li style="margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> Creative Design
+                        </li>
+                        <li style="margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> Audience Targeting
+                        </li>
+                        <li style="margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> A/B Testing
+                        </li>
+                        <li style="display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> Performance Reports
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="cta-btn" style="width:100%; text-align:center; margin-top:1rem;">Start Campaign</a>
                 </div>
-                <p>High-conversion ad campaigns targeting your ideal customer demographics.</p>
-                <div class="price">₹12,000 <span style="font-size:1rem; color:#888">/ per ad</span></div>
-                <ul style="list-style:none; margin-bottom:20px; color:#ccc;">
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> Creative Design</li>
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> Audience Targeting</li>
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> A/B Testing</li>
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> Performance Reports</li>
-                </ul>
-                <a href="contact.html" class="cta-btn" style="width:100%; display:block; text-align:center">Start Campaign</a>
-            </div>
 
-            <!-- SEO Dominance -->
-            <div class="card seo-fade-in delay-2" data-service="seo" style="border-color: var(--primary);">
-                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
-                    <div style="width: 50px; height: 50px; background: rgba(0, 242, 255, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-search fa-lg" style="color:var(--primary)"></i>
+                <!-- SEO Dominance -->
+                <div class="card fade-in" data-service="seo" style="border-color: var(--primary); animation-delay: 0.1s;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="width: 50px; height: 50px; background: rgba(0, 242, 255, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-search fa-lg" style="color:var(--primary)"></i>
+                        </div>
+                        <h3 style="margin: 0;">SEO Dominance</h3>
                     </div>
-                    <h3>SEO Dominance</h3>
+                    <p>Rank on the top page. Setup takes 10 days, results last forever.</p>
+                    <div class="price">₹40,000 <span style="font-size:1rem; color:var(--text-muted)">/ month</span></div>
+                    <p style="font-size:0.9rem; color:var(--text-muted); margin: -0.5rem 0 1.5rem;">(Initial 3-month contract)</p>
+                    <ul style="list-style:none; margin:1.5rem 0; padding:0; color:var(--text-light);">
+                        <li style="margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> Keyword Research
+                        </li>
+                        <li style="margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> Technical SEO Audit
+                        </li>
+                        <li style="margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> Backlink Strategy
+                        </li>
+                        <li style="display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> Monthly Reporting
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="cta-btn" style="width:100%; text-align:center; margin-top:1rem;">Rank Higher</a>
                 </div>
-                <p>Rank on the top page. Setup takes 10 days, results last forever.</p>
-                <div class="price">₹40,000 <span style="font-size:1rem; color:#888">/ month</span></div>
-                <p style="font-size:0.9rem; color:#888; margin-top:-15px; margin-bottom: 20px;">(Initial 3-month contract)</p>
-                <ul style="list-style:none; margin-bottom:20px; color:#ccc;">
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> Keyword Research</li>
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> Technical SEO Audit</li>
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> Backlink Strategy</li>
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> Monthly Reporting</li>
-                </ul>
-                <a href="contact.html" class="cta-btn" style="width:100%; display:block; text-align:center">Rank Higher</a>
-            </div>
 
-            <!-- Custom WebApps -->
-            <div class="card seo-slide-in-right delay-3" data-service="webapp">
-                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
-                    <div style="width: 50px; height: 50px; background: rgba(0, 242, 255, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-code fa-lg" style="color:var(--primary)"></i>
+                <!-- Custom WebApps -->
+                <div class="card fade-in" data-service="webapp" style="animation-delay: 0.2s;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="width: 50px; height: 50px; background: rgba(0, 242, 255, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-code fa-lg" style="color:var(--primary)"></i>
+                        </div>
+                        <h3 style="margin: 0;">Custom WebApps</h3>
                     </div>
-                    <h3>Custom WebApps</h3>
+                    <p>Scalable, secure, and beautiful web applications tailored to your business.</p>
+                    <div class="price">From ₹40,000</div>
+                    <p style="font-size:0.9rem; color:var(--text-muted); margin: -0.5rem 0 1.5rem;">(Custom pricing based on requirements)</p>
+                    <ul style="list-style:none; margin:1.5rem 0; padding:0; color:var(--text-light);">
+                        <li style="margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> API & Chatbot Integration
+                        </li>
+                        <li style="margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> 1 Month Development
+                        </li>
+                        <li style="margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> 10 Days Testing
+                        </li>
+                        <li style="display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> 6 Months Support
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="cta-btn" style="width:100%; text-align:center; margin-top:1rem;">Consult Now</a>
                 </div>
-                <p>Scalable, secure, and beautiful web applications tailored to your business.</p>
-                <div class="price">From ₹40,000</div>
-                <p style="font-size:0.9rem; color:#888; margin-top:-15px; margin-bottom: 20px;">(Custom pricing based on requirements)</p>
-                <ul style="list-style:none; margin-bottom:20px; color:#ccc;">
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> API & Chatbot Integration</li>
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> 1 Month Development</li>
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> 10 Days Testing</li>
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> 6 Months Support</li>
-                </ul>
-                <a href="contact.html" class="cta-btn" style="width:100%; display:block; text-align:center">Consult Now</a>
-            </div>
 
-            <!-- WhatsApp Automation (NEW) -->
-            <div class="card seo-slide-in-left delay-2" data-service="whatsapp">
-                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
-                    <div style="width: 50px; height: 50px; background: rgba(37, 211, 102, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
-                        <i class="fab fa-whatsapp fa-lg" style="color:#25D366"></i>
+                <!-- WhatsApp Automation -->
+                <div class="card fade-in" data-service="whatsapp" style="animation-delay: 0.3s;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="width: 50px; height: 50px; background: rgba(37, 211, 102, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fab fa-whatsapp fa-lg" style="color:#25D366"></i>
+                        </div>
+                        <h3 style="margin: 0;">WhatsApp Automation</h3>
                     </div>
-                    <h3>WhatsApp Automation</h3>
+                    <p>Automate customer engagement, sales, and support via WhatsApp Business API.</p>
+                    <div class="price">From ₹25,000</div>
+                    <p style="font-size:0.9rem; color:var(--text-muted); margin: -0.5rem 0 1.5rem;">(One-time setup + monthly)</p>
+                    <ul style="list-style:none; margin:1.5rem 0; padding:0; color:var(--text-light);">
+                        <li style="margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> Automated Replies
+                        </li>
+                        <li style="margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> Broadcast Campaigns
+                        </li>
+                        <li style="margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> CRM Integration
+                        </li>
+                        <li style="display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> 99% Open Rate
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="cta-btn" style="width:100%; text-align:center; margin-top:1rem; background:linear-gradient(135deg, #25D366 0%, #128C7E 100%);">Automate Now</a>
                 </div>
-                <p>Automate customer engagement, sales, and support via WhatsApp Business API.</p>
-                <div class="price">From ₹25,000</div>
-                <p style="font-size:0.9rem; color:#888; margin-top:-15px; margin-bottom: 20px;">(One-time setup + monthly)</p>
-                <ul style="list-style:none; margin-bottom:20px; color:#ccc;">
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> Automated Replies</li>
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> Broadcast Campaigns</li>
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> CRM Integration</li>
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> 99% Open Rate</li>
-                </ul>
-                <a href="contact.html" class="cta-btn" style="width:100%; display:block; text-align:center; background:linear-gradient(135deg, #25D366 0%, #128C7E 100%);">Automate Now</a>
-            </div>
 
-            <!-- AI Chatbot Integration (NEW) -->
-            <div class="card seo-fade-in delay-3" data-service="chatbot">
-                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
-                    <div style="width: 50px; height: 50px; background: rgba(0, 242, 255, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-robot fa-lg" style="color:var(--primary)"></i>
+                <!-- AI Chatbot Integration -->
+                <div class="card fade-in" data-service="chatbot" style="animation-delay: 0.4s;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="width: 50px; height: 50px; background: rgba(0, 242, 255, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-robot fa-lg" style="color:var(--primary)"></i>
+                        </div>
+                        <h3 style="margin: 0;">AI Chatbot Integration</h3>
                     </div>
-                    <h3>AI Chatbot Integration</h3>
+                    <p>Intelligent chatbots that provide 24/7 customer support and lead generation.</p>
+                    <div class="price">From ₹30,000</div>
+                    <p style="font-size:0.9rem; color:var(--text-muted); margin: -0.5rem 0 1.5rem;">(One-time development)</p>
+                    <ul style="list-style:none; margin:1.5rem 0; padding:0; color:var(--text-light);">
+                        <li style="margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> 24/7 Support
+                        </li>
+                        <li style="margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> Multi-language
+                        </li>
+                        <li style="margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> Custom AI Training
+                        </li>
+                        <li style="display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> Analytics Dashboard
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="cta-btn" style="width:100%; text-align:center; margin-top:1rem;">Integrate Now</a>
                 </div>
-                <p>Intelligent chatbots that provide 24/7 customer support and lead generation.</p>
-                <div class="price">From ₹30,000</div>
-                <p style="font-size:0.9rem; color:#888; margin-top:-15px; margin-bottom: 20px;">(One-time development)</p>
-                <ul style="list-style:none; margin-bottom:20px; color:#ccc;">
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> 24/7 Support</li>
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> Multi-language</li>
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> Custom AI Training</li>
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> Analytics Dashboard</li>
-                </ul>
-                <a href="contact.html" class="cta-btn" style="width:100%; display:block; text-align:center">Integrate Now</a>
-            </div>
 
-            <!-- Enterprise Package -->
-            <div class="card seo-scale-up delay-3" data-service="enterprise" style="grid-column: span 2; background: linear-gradient(135deg, rgba(0, 242, 255, 0.05) 0%, rgba(0, 81, 255, 0.05) 100%);">
-                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
-                    <div style="width: 50px; height: 50px; background: rgba(0, 242, 255, 0.2); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-crown fa-lg" style="color:var(--primary)"></i>
+                <!-- Enterprise Package -->
+                <div class="card fade-in" data-service="enterprise" style="animation-delay: 0.5s; background: linear-gradient(135deg, rgba(0, 242, 255, 0.05) 0%, rgba(0, 81, 255, 0.05) 100%);">
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 50px; height: 50px; background: rgba(0, 242, 255, 0.2); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-crown fa-lg" style="color:var(--primary)"></i>
+                            </div>
+                            <h3 style="margin: 0;">Enterprise Package</h3>
+                        </div>
+                        <span style="background: var(--gradient); color: black; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">MOST POPULAR</span>
                     </div>
-                    <h3>Enterprise Package</h3>
-                    <span style="background: var(--gradient); color: black; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">MOST POPULAR</span>
+                    <p>Complete digital transformation with WebApp, SEO, Marketing & Automation.</p>
+                    <div class="price">From ₹1,50,000</div>
+                    <p style="font-size:0.9rem; color:var(--text-muted); margin: -0.5rem 0 1.5rem;">(Comprehensive 6-month plan)</p>
+                    <ul style="list-style:none; margin:1.5rem 0; padding:0; color:var(--text-light); display: grid; grid-template-columns: 1fr; gap: 0.75rem;">
+                        <li style="display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> Custom WebApp
+                        </li>
+                        <li style="display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> 6 Months SEO
+                        </li>
+                        <li style="display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> 10 Ad Campaigns
+                        </li>
+                        <li style="display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> WhatsApp Automation
+                        </li>
+                        <li style="display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> AI Chatbot
+                        </li>
+                        <li style="display:flex; align-items:center; gap:0.5rem;">
+                            <i class="fas fa-check" style="color:var(--success)"></i> Priority Support
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="cta-btn" style="width:100%; text-align:center; margin-top:1rem; background:linear-gradient(135deg, #FFD700 0%, #FFA500 100%); color: #000;">Get Enterprise Plan</a>
                 </div>
-                <p>Complete digital transformation with WebApp, SEO, Marketing & Automation.</p>
-                <div class="price">From ₹1,50,000</div>
-                <p style="font-size:0.9rem; color:#888; margin-top:-15px; margin-bottom: 20px;">(Comprehensive 6-month plan)</p>
-                <ul style="list-style:none; margin-bottom:20px; color:#ccc; columns: 2;">
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> Custom WebApp</li>
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> 6 Months SEO</li>
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> 10 Ad Campaigns</li>
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> WhatsApp Automation</li>
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> AI Chatbot</li>
-                    <li><i class="fas fa-check" style="color:var(--success)"></i> Priority Support</li>
-                </ul>
-                <a href="contact.html" class="cta-btn" style="width:100%; display:block; text-align:center; background:linear-gradient(135deg, #FFD700 0%, #FFA500 100%); color: #000;">Get Enterprise Plan</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Benefits Section -->
-    <section style="margin-top: 80px;">
-        <h2 class="seo-fade-in">Why Invest in Digital Services?</h2>
-        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
-            <div class="card seo-scale-up delay-1" style="text-align: center;">
-                <i class="fas fa-chart-line fa-3x" style="color:var(--success); margin-bottom: 20px;"></i>
-                <h4>300% Average ROI</h4>
-                <p>Our clients see 3x returns on their digital investment within 6 months</p>
+        <!-- Benefits Section -->
+        <section style="background: rgba(0, 242, 255, 0.02); border-radius: var(--radius);">
+            <h2 class="text-center">Why Invest in Digital Services?</h2>
+            <div class="grid">
+                <div class="card fade-in" style="text-align: center;">
+                    <i class="fas fa-chart-line fa-2x" style="color:var(--success); margin-bottom: 1rem;"></i>
+                    <h4>300% Average ROI</h4>
+                    <p>Our clients see 3x returns on their digital investment within 6 months</p>
+                </div>
+                <div class="card fade-in" style="text-align: center; animation-delay: 0.2s;">
+                    <i class="fas fa-clock fa-2x" style="color:var(--primary); margin-bottom: 1rem;"></i>
+                    <h4>10-Day Setup</h4>
+                    <p>Quick implementation means faster results for your business</p>
+                </div>
+                <div class="card fade-in" style="text-align: center; animation-delay: 0.4s;">
+                    <i class="fas fa-shield-alt fa-2x" style="color:#FFD700; margin-bottom: 1rem;"></i>
+                    <h4>Guaranteed Results</h4>
+                    <p>Performance-based approach with clear KPIs and regular reporting</p>
+                </div>
             </div>
-            <div class="card seo-scale-up delay-2" style="text-align: center;">
-                <i class="fas fa-clock fa-3x" style="color:var(--primary); margin-bottom: 20px;"></i>
-                <h4>10-Day Setup</h4>
-                <p>Quick implementation means faster results for your business</p>
-            </div>
-            <div class="card seo-scale-up delay-3" style="text-align: center;">
-                <i class="fas fa-shield-alt fa-3x" style="color:#FFD700; margin-bottom: 20px;"></i>
-                <h4>Guaranteed Results</h4>
-                <p>Performance-based approach with clear KPIs and regular reporting</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
+        <!-- FAQ Preview -->
+        <section>
+            <h2 class="text-center">Common Questions About Services</h2>
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        What's included in your service pricing?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>All prices include strategy, implementation, testing, deployment, and initial support. Additional costs apply for third-party licenses and custom integrations.</p>
+                            <a href="faq.html" class="faq-cta">View Pricing Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in" style="animation-delay: 0.2s;">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you offer payment plans?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Yes! We offer milestone payments, monthly retainers, and custom payment schedules. Contact us to discuss options that work for your business.</p>
+                            <a href="contact.html" class="faq-cta">Discuss Payment Options</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in" style="animation-delay: 0.4s;">
+                    <button class="faq-question" aria-expanded="false">
+                        Can I start with one service and add more later?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Absolutely! Many clients start with one service (like web development) and add SEO or marketing later. We offer seamless integration of additional services.</p>
+                            <a href="contact.html" class="faq-cta">Plan Your Growth</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-3">
+                <a href="faq.html" class="cta-btn">View All FAQs</a>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section style="text-align: center;">
+            <div class="card" style="background: var(--gradient); color: #000; padding: 3rem 1.5rem; border: none;">
+                <h2 style="color: #000; margin-bottom: 1rem;">Ready to Transform Your Business?</h2>
+                <p style="color: rgba(0,0,0,0.8); margin-bottom: 2rem;">Get a free consultation and customized proposal for your project.</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+                    <a href="contact.html" class="cta-btn" style="background: #000; color: white;">Get Free Consultation</a>
+                    <a href="tel:+91XXXXXXXXXX" class="cta-btn" style="background: rgba(255,255,255,0.2); color: #000;">Call: +91 XXXXXXXXXX</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Buttons -->
     <div class="floating-container">
-        <a href="https://wa.me/91XXXXXXXXXX" class="float-btn float-whatsapp" target="_blank">
-            <i class="fab fa-whatsapp"></i>
+        <a href="https://wa.me/91XXXXXXXXXX" class="float-btn float-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
         </a>
-        <a href="tel:+91XXXXXXXXXX" class="float-btn float-phone">
-            <i class="fas fa-phone-alt"></i>
+        <a href="tel:+91XXXXXXXXXX" class="float-btn float-phone" aria-label="Call us">
+            <i class="fas fa-phone-alt" aria-hidden="true"></i>
         </a>
     </div>
 
     <!-- Service Modal -->
-    <div id="serviceModal" class="modal">
+    <div id="serviceModal" class="modal" role="dialog" aria-modal="true" aria-label="Service Details">
         <div class="modal-content">
-            <button class="close-btn">&times;</button>
+            <button class="close-btn" aria-label="Close modal">&times;</button>
             <h3 id="modal-title">Service Title</h3>
             <p id="modal-description">Service description.</p>
-            <h4 style="color: var(--primary); margin: 20px 0 10px;">Why You Need This:</h4>
-            <ul id="modal-reasons">
+            <h4 style="color: var(--primary); margin: 1.5rem 0 1rem;">Why You Need This:</h4>
+            <ul id="modal-reasons" style="margin-bottom: 2rem;">
                 <!-- Reasons will be added by JavaScript -->
             </ul>
-            <a href="contact.html" class="cta-btn" style="margin-top: 20px;">Start This Service</a>
+            <a href="contact.html" class="cta-btn" style="display: block; text-align: center;">Start This Service</a>
         </div>
     </div>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -225,31 +388,173 @@
             </div>
             <div class="footer-section">
                 <h4>Company</h4>
-                <a href="index.html#about">Our Process</a>
-                <a href="services.html">Pricing</a>
-                <a href="contact.html">Free Consultation</a>
-                <a href="#privacy">Privacy Policy</a>
-                <a href="#terms">Terms of Service</a>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services & Pricing</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact</a>
             </div>
             <div class="footer-section">
                 <h4>Contact Us</h4>
-                <p><i class="fas fa-envelope"></i> contact@denisiawebops.com</p>
-                <p><i class="fas fa-phone"></i> +91 XXXXXXXXXX</p>
-                <p><i class="fas fa-map-marker-alt"></i> Based in India</p>
+                <p><i class="fas fa-envelope" aria-hidden="true"></i> contact@denisiawebops.com</p>
+                <p><i class="fas fa-phone" aria-hidden="true"></i> +91 XXXXXXXXXX</p>
+                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Based in India</p>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
         <div class="copyright">
-            &copy; <span id="currentYear"></span> Denisia Webops. All rights reserved. Launched Dec 9, 2025.
+            &copy; <span id="currentYear"></span> Denisia Webops. All rights reserved.
         </div>
     </footer>
 
     <script src="script.js"></script>
-    
+    <script>
+        // Service Modal Enhancement
+        document.addEventListener('DOMContentLoaded', function() {
+            const serviceModal = document.getElementById('serviceModal');
+            const serviceCards = document.querySelectorAll('.card[data-service]');
+            const closeModalBtn = document.querySelector('.close-btn');
+            
+            // Service details data
+            const serviceData = {
+                webapp: {
+                    title: "Custom Web Application Development",
+                    description: "We build enterprise-grade web applications tailored to your unique business needs, designed for scalability, security, and exceptional user experience.",
+                    reasons: [
+                        "**Competitive Advantage:** Stand out with features competitors don't have",
+                        "**Data Ownership:** Full control over your valuable business data",
+                        "**Scalability:** Handle thousands of users without performance issues",
+                        "**Integration:** Seamlessly connect with existing systems and APIs",
+                        "**Custom Workflow:** Perfectly match your business processes",
+                        "**Security:** Enterprise-level security protecting sensitive data"
+                    ]
+                },
+                seo: {
+                    title: "SEO Implementation & Ranking Domination",
+                    description: "Our proven SEO strategy delivers consistent Page 1 rankings, driving qualified organic traffic that converts into customers.",
+                    reasons: [
+                        "**Highest ROI Marketing:** Organic traffic provides the best long-term ROI",
+                        "**24/7 Business Visibility:** Your website works for you even when you sleep",
+                        "**Builds Trust & Authority:** Top rankings establish your brand as an industry leader",
+                        "**Sustainable Growth:** Unlike ads, SEO results compound over time",
+                        "**Targets Ready-to-Buy Users:** Capture users actively searching for your services",
+                        "**Local Dominance:** Dominate local search results in your area"
+                    ]
+                },
+                ads: {
+                    title: "Precision Digital Marketing & PPC Ads",
+                    description: "Launch high-converting ad campaigns that deliver immediate, measurable results with complete transparency and optimization.",
+                    reasons: [
+                        "**Instant Results:** Get leads and sales within 24 hours of launch",
+                        "**Complete Control:** Set your budget, target audience, and schedule",
+                        "**Real-time Optimization:** We constantly optimize campaigns for better results",
+                        "**Measurable ROI:** Track every rupee spent and earned",
+                        "**Flexible Scaling:** Easily increase or decrease spending based on performance",
+                        "**Market Testing:** Quickly test new offers or target markets"
+                    ]
+                },
+                whatsapp: {
+                    title: "WhatsApp Automation Services",
+                    description: "Transform your customer communication with intelligent WhatsApp automation that engages, sells, and supports 24/7.",
+                    reasons: [
+                        "**99% Open Rate:** WhatsApp messages have near-perfect open rates",
+                        "**Direct Communication:** Connect with customers on their preferred platform",
+                        "**Automated Sales:** Qualify leads and follow up automatically",
+                        "**Reduce Support Load:** Handle common queries without human intervention",
+                        "**Personalized Marketing:** Send targeted messages based on user behavior",
+                        "**Cart Recovery:** Automatically remind users about abandoned carts"
+                    ]
+                },
+                chatbot: {
+                    title: "AI Chatbot & Enterprise API Integration",
+                    description: "Implement intelligent AI chatbots and seamless API integrations that automate workflows and enhance customer experience.",
+                    reasons: [
+                        "**24/7 Customer Support:** Never miss a customer query, day or night",
+                        "**Cost Reduction:** Handle 80% of queries without human agents",
+                        "**Lead Generation:** Qualify and capture leads automatically",
+                        "**Multi-language Support:** Serve customers in their preferred language",
+                        "**Seamless Integration:** Connect with CRM, payment gateways, and databases",
+                        "**Continuous Learning:** AI improves responses based on interactions"
+                    ]
+                },
+                enterprise: {
+                    title: "Enterprise Digital Transformation Package",
+                    description: "Comprehensive digital solution combining web development, marketing, and automation for complete business transformation.",
+                    reasons: [
+                        "**Unified Strategy:** All digital efforts work together seamlessly",
+                        "**Cost Efficiency:** Bundle discount compared to separate services",
+                        "**Priority Support:** Dedicated account manager and faster response times",
+                        "**Holistic Growth:** Address all aspects of your digital presence",
+                        "**Consistent Branding:** Unified look and feel across all platforms",
+                        "**Scalable Infrastructure:** Ready for rapid business growth"
+                    ]
+                }
+            };
+
+            // Open modal on card click
+            serviceCards.forEach(card => {
+                card.addEventListener('click', function(e) {
+                    // Don't trigger modal if clicking on a link inside the card
+                    if (e.target.tagName === 'A' || e.target.closest('a')) {
+                        return;
+                    }
+                    
+                    const serviceKey = this.dataset.service;
+                    const data = serviceData[serviceKey];
+                    
+                    if (data) {
+                        document.getElementById('modal-title').textContent = data.title;
+                        document.getElementById('modal-description').textContent = data.description;
+                        
+                        const reasonsList = document.getElementById('modal-reasons');
+                        reasonsList.innerHTML = '';
+                        
+                        data.reasons.forEach(reason => {
+                            const li = document.createElement('li');
+                            const formattedReason = reason.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+                            li.innerHTML = formattedReason;
+                            li.style.marginBottom = '0.75rem';
+                            li.style.paddingLeft = '0.5rem';
+                            reasonsList.appendChild(li);
+                        });
+                        
+                        serviceModal.style.display = 'flex';
+                        document.body.style.overflow = 'hidden';
+                        serviceModal.setAttribute('aria-hidden', 'false');
+                    }
+                });
+            });
+
+            // Close modal
+            if (closeModalBtn) {
+                closeModalBtn.addEventListener('click', () => {
+                    serviceModal.style.display = 'none';
+                    document.body.style.overflow = '';
+                    serviceModal.setAttribute('aria-hidden', 'true');
+                });
+            }
+
+            // Close modal on outside click
+            serviceModal.addEventListener('click', (e) => {
+                if (e.target === serviceModal) {
+                    serviceModal.style.display = 'none';
+                    document.body.style.overflow = '';
+                    serviceModal.setAttribute('aria-hidden', 'true');
+                }
+            });
+
+            // Close modal on escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && serviceModal.style.display === 'flex') {
+                    serviceModal.style.display = 'none';
+                    document.body.style.overflow = '';
+                    serviceModal.setAttribute('aria-hidden', 'true');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
