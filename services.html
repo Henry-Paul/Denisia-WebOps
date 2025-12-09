@@ -3,39 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Denisia Webops</title>
+    
+    <!-- SEO Optimized Title -->
+    <title>Web Development Services Pricing India | SEO, WebApp & Marketing</title>
+    
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Affordable Web Development Services in India. Custom WebApps from ₹40k, SEO packages ₹40k/month, Digital Marketing ₹12k/ad. Free consultation available.">
+    
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="web development pricing India, SEO services cost, digital marketing packages, custom web application development, affordable web design, monthly SEO packages, PPC advertising rates">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav>
         <a href="index.html" class="logo">Denisia<span style="color:white">Webops</span></a>
-        <div class="nav-links">
+        <div class="nav-links" id="navLinks">
             <a href="index.html">Home</a>
             <a href="services.html" class="active">Services & Pricing</a>
             <a href="contact.html">Start Project</a>
         </div>
         <a href="contact.html" class="cta-btn">Get Quote</a>
+        <div class="burger-menu" id="burgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
 
     <section>
-        <h2>Our Powerhouse Plans</h2>
+        <h2 class="seo-fade-in">Our Powerhouse Plans</h2>
+        <p style="text-align: center; color: var(--text-muted); max-width: 800px; margin: 0 auto 50px;" class="seo-fade-in delay-1">
+            Click on any service to see detailed benefits and why you need it for your business growth.
+        </p>
+        
         <div class="grid">
-            <div class="card">
-                <h3><i class="fas fa-bullhorn"></i> Digital Marketing</h3>
+            <!-- Digital Marketing -->
+            <div class="card seo-slide-in-left delay-1" data-service="ads">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                    <div style="width: 50px; height: 50px; background: rgba(0, 242, 255, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-bullhorn fa-lg" style="color:var(--primary)"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                </div>
                 <p>High-conversion ad campaigns targeting your ideal customer demographics.</p>
                 <div class="price">₹12,000 <span style="font-size:1rem; color:#888">/ per ad</span></div>
                 <ul style="list-style:none; margin-bottom:20px; color:#ccc;">
                     <li><i class="fas fa-check" style="color:var(--success)"></i> Creative Design</li>
                     <li><i class="fas fa-check" style="color:var(--success)"></i> Audience Targeting</li>
                     <li><i class="fas fa-check" style="color:var(--success)"></i> A/B Testing</li>
+                    <li><i class="fas fa-check" style="color:var(--success)"></i> Performance Reports</li>
                 </ul>
                 <a href="contact.html" class="cta-btn" style="width:100%; display:block; text-align:center">Start Campaign</a>
             </div>
 
-            <div class="card" style="border-color: var(--primary);">
-                <h3><i class="fas fa-search"></i> SEO Dominance</h3>
+            <!-- SEO Dominance -->
+            <div class="card seo-fade-in delay-2" data-service="seo" style="border-color: var(--primary);">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                    <div style="width: 50px; height: 50px; background: rgba(0, 242, 255, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-search fa-lg" style="color:var(--primary)"></i>
+                    </div>
+                    <h3>SEO Dominance</h3>
+                </div>
                 <p>Rank on the top page. Setup takes 10 days, results last forever.</p>
                 <div class="price">₹40,000 <span style="font-size:1rem; color:#888">/ month</span></div>
                 <p style="font-size:0.9rem; color:#888; margin-top:-15px; margin-bottom: 20px;">(Initial 3-month contract)</p>
@@ -43,53 +77,178 @@
                     <li><i class="fas fa-check" style="color:var(--success)"></i> Keyword Research</li>
                     <li><i class="fas fa-check" style="color:var(--success)"></i> Technical SEO Audit</li>
                     <li><i class="fas fa-check" style="color:var(--success)"></i> Backlink Strategy</li>
+                    <li><i class="fas fa-check" style="color:var(--success)"></i> Monthly Reporting</li>
                 </ul>
                 <a href="contact.html" class="cta-btn" style="width:100%; display:block; text-align:center">Rank Higher</a>
             </div>
 
-            <div class="card">
-                <h3><i class="fas fa-code"></i> Custom WebApps</h3>
+            <!-- Custom WebApps -->
+            <div class="card seo-slide-in-right delay-3" data-service="webapp">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                    <div style="width: 50px; height: 50px; background: rgba(0, 242, 255, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-code fa-lg" style="color:var(--primary)"></i>
+                    </div>
+                    <h3>Custom WebApps</h3>
+                </div>
                 <p>Scalable, secure, and beautiful web applications tailored to your business.</p>
-                <div class="price">Custom Quote</div>
+                <div class="price">From ₹40,000</div>
+                <p style="font-size:0.9rem; color:#888; margin-top:-15px; margin-bottom: 20px;">(Custom pricing based on requirements)</p>
                 <ul style="list-style:none; margin-bottom:20px; color:#ccc;">
                     <li><i class="fas fa-check" style="color:var(--success)"></i> API & Chatbot Integration</li>
                     <li><i class="fas fa-check" style="color:var(--success)"></i> 1 Month Development</li>
                     <li><i class="fas fa-check" style="color:var(--success)"></i> 10 Days Testing</li>
+                    <li><i class="fas fa-check" style="color:var(--success)"></i> 6 Months Support</li>
                 </ul>
                 <a href="contact.html" class="cta-btn" style="width:100%; display:block; text-align:center">Consult Now</a>
+            </div>
+
+            <!-- WhatsApp Automation (NEW) -->
+            <div class="card seo-slide-in-left delay-2" data-service="whatsapp">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                    <div style="width: 50px; height: 50px; background: rgba(37, 211, 102, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fab fa-whatsapp fa-lg" style="color:#25D366"></i>
+                    </div>
+                    <h3>WhatsApp Automation</h3>
+                </div>
+                <p>Automate customer engagement, sales, and support via WhatsApp Business API.</p>
+                <div class="price">From ₹25,000</div>
+                <p style="font-size:0.9rem; color:#888; margin-top:-15px; margin-bottom: 20px;">(One-time setup + monthly)</p>
+                <ul style="list-style:none; margin-bottom:20px; color:#ccc;">
+                    <li><i class="fas fa-check" style="color:var(--success)"></i> Automated Replies</li>
+                    <li><i class="fas fa-check" style="color:var(--success)"></i> Broadcast Campaigns</li>
+                    <li><i class="fas fa-check" style="color:var(--success)"></i> CRM Integration</li>
+                    <li><i class="fas fa-check" style="color:var(--success)"></i> 99% Open Rate</li>
+                </ul>
+                <a href="contact.html" class="cta-btn" style="width:100%; display:block; text-align:center; background:linear-gradient(135deg, #25D366 0%, #128C7E 100%);">Automate Now</a>
+            </div>
+
+            <!-- AI Chatbot Integration (NEW) -->
+            <div class="card seo-fade-in delay-3" data-service="chatbot">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                    <div style="width: 50px; height: 50px; background: rgba(0, 242, 255, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-robot fa-lg" style="color:var(--primary)"></i>
+                    </div>
+                    <h3>AI Chatbot Integration</h3>
+                </div>
+                <p>Intelligent chatbots that provide 24/7 customer support and lead generation.</p>
+                <div class="price">From ₹30,000</div>
+                <p style="font-size:0.9rem; color:#888; margin-top:-15px; margin-bottom: 20px;">(One-time development)</p>
+                <ul style="list-style:none; margin-bottom:20px; color:#ccc;">
+                    <li><i class="fas fa-check" style="color:var(--success)"></i> 24/7 Support</li>
+                    <li><i class="fas fa-check" style="color:var(--success)"></i> Multi-language</li>
+                    <li><i class="fas fa-check" style="color:var(--success)"></i> Custom AI Training</li>
+                    <li><i class="fas fa-check" style="color:var(--success)"></i> Analytics Dashboard</li>
+                </ul>
+                <a href="contact.html" class="cta-btn" style="width:100%; display:block; text-align:center">Integrate Now</a>
+            </div>
+
+            <!-- Enterprise Package -->
+            <div class="card seo-scale-up delay-3" data-service="enterprise" style="grid-column: span 2; background: linear-gradient(135deg, rgba(0, 242, 255, 0.05) 0%, rgba(0, 81, 255, 0.05) 100%);">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                    <div style="width: 50px; height: 50px; background: rgba(0, 242, 255, 0.2); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-crown fa-lg" style="color:var(--primary)"></i>
+                    </div>
+                    <h3>Enterprise Package</h3>
+                    <span style="background: var(--gradient); color: black; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">MOST POPULAR</span>
+                </div>
+                <p>Complete digital transformation with WebApp, SEO, Marketing & Automation.</p>
+                <div class="price">From ₹1,50,000</div>
+                <p style="font-size:0.9rem; color:#888; margin-top:-15px; margin-bottom: 20px;">(Comprehensive 6-month plan)</p>
+                <ul style="list-style:none; margin-bottom:20px; color:#ccc; columns: 2;">
+                    <li><i class="fas fa-check" style="color:var(--success)"></i> Custom WebApp</li>
+                    <li><i class="fas fa-check" style="color:var(--success)"></i> 6 Months SEO</li>
+                    <li><i class="fas fa-check" style="color:var(--success)"></i> 10 Ad Campaigns</li>
+                    <li><i class="fas fa-check" style="color:var(--success)"></i> WhatsApp Automation</li>
+                    <li><i class="fas fa-check" style="color:var(--success)"></i> AI Chatbot</li>
+                    <li><i class="fas fa-check" style="color:var(--success)"></i> Priority Support</li>
+                </ul>
+                <a href="contact.html" class="cta-btn" style="width:100%; display:block; text-align:center; background:linear-gradient(135deg, #FFD700 0%, #FFA500 100%); color: #000;">Get Enterprise Plan</a>
             </div>
         </div>
     </section>
 
-    <footer>
-    <div class="footer-content">
-        <div class="footer-section">
-            <h4>Services</h4>
-            <a href="services.html#dev">Web App Development</a>
-            <a href="services.html#seo">SEO & Ranking</a>
-            <a href="services.html#ai">Chatbot Integration</a>
-            <a href="services.html#ads">Digital Marketing</a>
-        </div>
-        <div class="footer-section">
-            <h4>Company</h4>
-            <a href="index.html#about">Our Process</a>
-            <a href="services.html">Pricing</a>
-            <a href="contact.html">Free Consultation</a>
-        </div>
-        <div class="footer-section">
-            <h4>Contact Us</h4>
-            <p>Email: contact@denisiawebops.com</p>
-            <p>Phone: +91 XXXXXXXXXX</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+    <!-- Benefits Section -->
+    <section style="margin-top: 80px;">
+        <h2 class="seo-fade-in">Why Invest in Digital Services?</h2>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+            <div class="card seo-scale-up delay-1" style="text-align: center;">
+                <i class="fas fa-chart-line fa-3x" style="color:var(--success); margin-bottom: 20px;"></i>
+                <h4>300% Average ROI</h4>
+                <p>Our clients see 3x returns on their digital investment within 6 months</p>
+            </div>
+            <div class="card seo-scale-up delay-2" style="text-align: center;">
+                <i class="fas fa-clock fa-3x" style="color:var(--primary); margin-bottom: 20px;"></i>
+                <h4>10-Day Setup</h4>
+                <p>Quick implementation means faster results for your business</p>
+            </div>
+            <div class="card seo-scale-up delay-3" style="text-align: center;">
+                <i class="fas fa-shield-alt fa-3x" style="color:#FFD700; margin-bottom: 20px;"></i>
+                <h4>Guaranteed Results</h4>
+                <p>Performance-based approach with clear KPIs and regular reporting</p>
             </div>
         </div>
-    </div>
-    <div class="copyright">
-        &copy; <span id="currentYear"></span> Denisia Webops. All rights reserved. Launched Dec 9, 2025.
-    </div>
-</footer>
+    </section>
 
+    <div class="floating-container">
+        <a href="https://wa.me/91XXXXXXXXXX" class="float-btn float-whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+91XXXXXXXXXX" class="float-btn float-phone">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+
+    <!-- Service Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn">&times;</button>
+            <h3 id="modal-title">Service Title</h3>
+            <p id="modal-description">Service description.</p>
+            <h4 style="color: var(--primary); margin: 20px 0 10px;">Why You Need This:</h4>
+            <ul id="modal-reasons">
+                <!-- Reasons will be added by JavaScript -->
+            </ul>
+            <a href="contact.html" class="cta-btn" style="margin-top: 20px;">Start This Service</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Services</h4>
+                <a href="#webapp">Web App Development</a>
+                <a href="#seo">SEO & Ranking</a>
+                <a href="#ai">Chatbot Integration</a>
+                <a href="#ads">Digital Marketing</a>
+                <a href="#whatsapp">WhatsApp Automation</a>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <a href="index.html#about">Our Process</a>
+                <a href="services.html">Pricing</a>
+                <a href="contact.html">Free Consultation</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-envelope"></i> contact@denisiawebops.com</p>
+                <p><i class="fas fa-phone"></i> +91 XXXXXXXXXX</p>
+                <p><i class="fas fa-map-marker-alt"></i> Based in India</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; <span id="currentYear"></span> Denisia Webops. All rights reserved. Launched Dec 9, 2025.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
 </body>
 </html>
