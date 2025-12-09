@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     
     <!-- Primary SEO Tags -->
-    <title>Custom WebApp Development & SEO Services India | Denisia Webops</title>
-    <meta name="description" content="Top-rated WebApp Development, SEO Optimization & Digital Marketing Agency in India. Build scalable web applications, rank #1 on Google, and drive targeted traffic.">
+    <title>Denisia Webops | WebApp Development & SEO Services India</title>
+    <meta name="description" content="Build custom web applications, improve SEO rankings, and automate business processes with Denisia Webops. India's leading web development agency.">
     
     <!-- Additional SEO Keywords -->
-    <meta name="keywords" content="web application development, SEO services India, digital marketing agency, custom web development, e-commerce solutions, mobile app development, website ranking, Google SEO, web design company">
+    <meta name="keywords" content="web development India, custom web applications, SEO services, digital marketing, WhatsApp automation, AI chatbots, website development">
     
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="Denisia Webops - WebApp Development & SEO Agency">
-    <meta property="og:description" content="Transform your business with custom web applications and guaranteed SEO results. Get a free consultation today.">
+    <meta property="og:title" content="Denisia Webops - Web Development & SEO Agency">
+    <meta property="og:description" content="Transform your business with professional web development and SEO services.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://denisiawebops.com">
     
@@ -39,171 +39,157 @@
     }
     </script>
     
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav>
-        <a href="index.html" class="logo">Denisia<span style="color:white">Webops</span></a>
-        <div class="nav-links" id="navLinks">
-            <a href="index.html" class="active">Home</a>
+    <nav aria-label="Main navigation">
+        <a href="index.html" class="logo" aria-label="Denisia Webops Home">
+            Denisia<span>Webops</span>
+        </a>
+        
+        <button class="burger-menu" id="burgerMenu" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <div class="nav-links" id="navLinks" aria-label="Navigation links">
+            <a href="index.html" class="active" aria-current="page">Home</a>
             <a href="services.html">Services & Pricing</a>
             <a href="faq.html">FAQ</a>
             <a href="contact.html">Start Project</a>
         </div>
-        <a href="contact.html" class="cta-btn">Get Quote</a>
-        <div class="burger-menu" id="burgerMenu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+        
+        <a href="contact.html" class="cta-btn" style="display: none;" id="desktopCta">Get Quote</a>
     </nav>
 
-    <!-- Main Content Wrapper -->
-    <div class="main-wrapper">
+    <!-- Main Content -->
+    <main class="container">
         <!-- Hero Section -->
-        <section class="hero">
-            <h1 class="seo-fade-in">Turn Your Business Idea Into<br><span style="background:linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">A Digital Powerhouse</span></h1>
-            <p class="seo-fade-in delay-1">We build intuitive WebApps, rank them on Page #1, and drive sales with precision Ads. Launch your future today.</p>
-            <div style="margin-top:30px;" class="seo-fade-in delay-2">
-                <a href="contact.html" class="cta-btn">Build My WebApp</a>
-                <a href="services.html" style="margin-left: 20px; color: var(--primary); text-decoration: none; font-weight: 600;">View Plans <i class="fas fa-arrow-right"></i></a>
+        <section class="hero fade-in">
+            <h1>Turn Your Business Idea Into<br><span style="display: inline-block; background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">A Digital Powerhouse</span></h1>
+            <p>We build intuitive WebApps, rank them on Page #1, and drive sales with precision Ads. Launch your future today.</p>
+            <div class="mt-2">
+                <a href="contact.html" class="cta-btn" style="margin-bottom: 1rem; display: inline-block;">Build My WebApp</a>
+                <a href="services.html" style="display: inline-block; color: var(--primary); text-decoration: none; font-weight: 600; margin-left: 1rem;">
+                    View Plans <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
             </div>
         </section>
 
-        <!-- Why Choose Us Section -->
+        <!-- Why Choose Us -->
         <section>
-            <h2 class="seo-fade-in">Why Choose Denisia Webops?</h2>
+            <h2 class="text-center">Why Choose Denisia Webops?</h2>
             <div class="grid">
-                <div class="card seo-slide-in-left delay-1">
-                    <i class="fas fa-rocket fa-2x" style="color:var(--primary)"></i>
+                <div class="card fade-in">
+                    <i class="fas fa-rocket fa-2x" style="color:var(--primary)" aria-hidden="true"></i>
                     <h3>Rapid Launch</h3>
                     <p>Development in 1 month. Rigorous testing in 10 days. We respect your time-to-market.</p>
                 </div>
-                <div class="card seo-fade-in delay-2">
-                    <i class="fas fa-robot fa-2x" style="color:var(--primary)"></i>
+                <div class="card fade-in" style="animation-delay: 0.2s;">
+                    <i class="fas fa-robot fa-2x" style="color:var(--primary)" aria-hidden="true"></i>
                     <h3>Smart Integration</h3>
                     <p>Seamless WhatsApp Chatbots and Custom APIs to automate your customer service.</p>
                 </div>
-                <div class="card seo-slide-in-right delay-3">
-                    <i class="fas fa-chart-line fa-2x" style="color:var(--primary)"></i>
+                <div class="card fade-in" style="animation-delay: 0.4s;">
+                    <i class="fas fa-chart-line fa-2x" style="color:var(--primary)" aria-hidden="true"></i>
                     <h3>Guaranteed Growth</h3>
                     <p>SEO setup in 10 days. Strategic ad campaigns designed to maximize your ROI.</p>
                 </div>
             </div>
         </section>
 
-        <!-- FAQ Section on Home Page -->
-        <section style="background: rgba(0, 242, 255, 0.02); border-radius: 20px; margin: 80px 0; padding: 60px 5%;">
-            <h2 class="seo-fade-in">Frequently Asked Questions</h2>
-            <p class="seo-fade-in delay-1" style="text-align: center; margin-bottom: 50px; color: var(--text-muted); max-width: 800px;">
-                Get quick answers to common questions about our services and processes.
-            </p>
-            
+        <!-- FAQ Preview -->
+        <section style="background: rgba(0, 242, 255, 0.02); border-radius: var(--radius);">
+            <h2 class="text-center">Common Questions</h2>
             <div class="faq-container">
-                <!-- FAQ 1 -->
-                <div class="faq-item seo-fade-in delay-1">
-                    <button class="faq-question">
-                        How long does it take to develop a custom web application?
-                        <i class="fas fa-chevron-down"></i>
+                <div class="faq-item fade-in">
+                    <button class="faq-question" aria-expanded="false">
+                        How long does web development take?
+                        <span class="faq-icon" aria-hidden="true">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Our standard timeline is 1 month for development and 10 days for rigorous testing. For complex projects, we provide a detailed timeline during the consultation phase.</p>
-                        <a href="contact.html" class="cta-btn faq-cta">Get Timeline Estimate</a>
+                        <div class="faq-answer-content">
+                            <p>Our standard timeline is 1 month for development plus 10 days for testing. Complex projects may vary.</p>
+                            <a href="contact.html" class="faq-cta">Get Timeline</a>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- FAQ 2 -->
-                <div class="faq-item seo-fade-in delay-2">
-                    <button class="faq-question">
-                        What is your SEO process and when will I see results?
-                        <i class="fas fa-chevron-down"></i>
+                <div class="faq-item fade-in" style="animation-delay: 0.2s;">
+                    <button class="faq-question" aria-expanded="false">
+                        When will I see SEO results?
+                        <span class="faq-icon" aria-hidden="true">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Our 10-day SEO setup includes technical audit, keyword research, and initial optimization. You'll see improvements within 30 days, with significant results in 3-6 months.</p>
-                        <a href="services.html#seo" class="cta-btn faq-cta">View SEO Packages</a>
+                        <div class="faq-answer-content">
+                            <p>Initial improvements in 30 days, significant results in 3-6 months with our proven strategy.</p>
+                            <a href="services.html#seo" class="faq-cta">View SEO Plans</a>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- FAQ 3 -->
-                <div class="faq-item seo-fade-in delay-3">
-                    <button class="faq-question">
-                        Do you provide ongoing support after project completion?
-                        <i class="fas fa-chevron-down"></i>
+                <div class="faq-item fade-in" style="animation-delay: 0.4s;">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you provide ongoing support?
+                        <span class="faq-icon" aria-hidden="true">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes! All web applications include 6 months of free support. We offer affordable monthly maintenance plans for ongoing updates, security, and performance monitoring.</p>
-                        <a href="contact.html" class="cta-btn faq-cta">Get Support Plan</a>
-                    </div>
-                </div>
-                
-                <!-- FAQ 4 -->
-                <div class="faq-item seo-fade-in delay-4">
-                    <button class="faq-question">
-                        What makes your WhatsApp Automation different?
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We use WhatsApp Business API for enterprise-grade automation, not basic bots. Features include CRM integration, automated sales funnels, and 24/7 customer support.</p>
-                        <a href="services.html#whatsapp" class="cta-btn faq-cta">Explore WhatsApp Automation</a>
+                        <div class="faq-answer-content">
+                            <p>Yes! All projects include free support. We offer affordable maintenance plans for continuous updates.</p>
+                            <a href="contact.html" class="faq-cta">Get Support Plan</a>
+                        </div>
                     </div>
                 </div>
             </div>
             
-            <div style="text-align: center; margin-top: 50px;">
-                <a href="faq.html" class="cta-btn">View All FAQs <i class="fas fa-arrow-right"></i></a>
+            <div class="text-center mt-3">
+                <a href="faq.html" class="cta-btn">View All FAQs</a>
             </div>
         </section>
 
-        <!-- Client Testimonials -->
+        <!-- Testimonials -->
         <section>
-            <h2 class="seo-fade-in">Trusted by Growing Businesses</h2>
+            <h2 class="text-center">Trusted by Businesses</h2>
             <div class="grid">
-                <div class="card seo-scale-up delay-1">
-                    <i class="fas fa-quote-left fa-2x" style="color:var(--primary)"></i>
-                    <p>"Denisia Webops transformed our online presence. Our organic traffic increased by 300% in just 2 months!"</p>
-                    <div style="margin-top: 20px;">
+                <div class="card fade-in">
+                    <i class="fas fa-quote-left" style="color:var(--primary)" aria-hidden="true"></i>
+                    <p>"Denisia Webops increased our organic traffic by 300% in just 2 months!"</p>
+                    <div class="mt-2">
                         <strong>Rahul Sharma</strong><br>
                         <small>CEO, TechSolutions Inc.</small>
                     </div>
                 </div>
-                <div class="card seo-scale-up delay-2">
-                    <i class="fas fa-quote-left fa-2x" style="color:var(--primary)"></i>
-                    <p>"The custom web application they built handles 10,000+ daily users seamlessly. Highly recommended!"</p>
-                    <div style="margin-top: 20px;">
+                <div class="card fade-in" style="animation-delay: 0.2s;">
+                    <i class="fas fa-quote-left" style="color:var(--primary)" aria-hidden="true"></i>
+                    <p>"The custom web application handles 10,000+ daily users seamlessly. Highly recommended!"</p>
+                    <div class="mt-2">
                         <strong>Priya Patel</strong><br>
                         <small>Founder, EduTech Platform</small>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
+    </main>
 
     <!-- Floating Buttons -->
     <div class="floating-container">
-        <a href="https://wa.me/91XXXXXXXXXX" class="float-btn float-whatsapp" target="_blank" title="Chat on WhatsApp">
-            <i class="fab fa-whatsapp"></i>
+        <a href="https://wa.me/91XXXXXXXXXX" class="float-btn float-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
         </a>
-        <a href="tel:+91XXXXXXXXXX" class="float-btn float-phone" title="Call Us">
-            <i class="fas fa-phone-alt"></i>
+        <a href="tel:+91XXXXXXXXXX" class="float-btn float-phone" aria-label="Call us">
+            <i class="fas fa-phone-alt" aria-hidden="true"></i>
         </a>
-    </div>
-
-    <!-- Service Modal -->
-    <div id="serviceModal" class="modal">
-        <div class="modal-content">
-            <button class="close-btn">&times;</button>
-            <h3 id="modal-title">Service Title</h3>
-            <p id="modal-description">Service description.</p>
-            <ul id="modal-reasons">
-                <!-- Reasons will be added by JavaScript -->
-            </ul>
-            <a href="contact.html" class="cta-btn">Start This Service</a>
-        </div>
     </div>
 
     <!-- Footer -->
@@ -211,7 +197,7 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>Services</h4>
-                <a href="services.html#webapp">Web App Development</a>
+                <a href="services.html">Web App Development</a>
                 <a href="services.html#seo">SEO & Ranking</a>
                 <a href="services.html#ai">Chatbot Integration</a>
                 <a href="services.html#ads">Digital Marketing</a>
@@ -219,26 +205,25 @@
             </div>
             <div class="footer-section">
                 <h4>Company</h4>
-                <a href="index.html#about">Our Process</a>
-                <a href="services.html">Pricing</a>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services & Pricing</a>
                 <a href="faq.html">FAQ</a>
-                <a href="contact.html">Free Consultation</a>
+                <a href="contact.html">Contact</a>
             </div>
             <div class="footer-section">
                 <h4>Contact Us</h4>
-                <p><i class="fas fa-envelope"></i> contact@denisiawebops.com</p>
-                <p><i class="fas fa-phone"></i> +91 XXXXXXXXXX</p>
-                <p><i class="fas fa-map-marker-alt"></i> Based in India</p>
+                <p><i class="fas fa-envelope" aria-hidden="true"></i> contact@denisiawebops.com</p>
+                <p><i class="fas fa-phone" aria-hidden="true"></i> +91 XXXXXXXXXX</p>
+                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Based in India</p>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin" title="LinkedIn"></i></a>
-                    <a href="#"><i class="fab fa-twitter" title="Twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram" title="Instagram"></i></a>
-                    <a href="#"><i class="fab fa-facebook" title="Facebook"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
         <div class="copyright">
-            &copy; <span id="currentYear"></span> Denisia Webops. All rights reserved. Launched Dec 9, 2025.
+            &copy; <span id="currentYear"></span> Denisia Webops. All rights reserved.
         </div>
     </footer>
 
